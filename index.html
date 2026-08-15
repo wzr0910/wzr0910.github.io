@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>馍馍 · 作品集</title>
+<meta name="description" content="哲学专业 · 自学 vibe coding · 为同类人做产品。两个作品：PhilIntern 哲学实习助手、孩子的游戏 AI 哲学共读。" />
+<style>
+  :root{
+    --ink:#1C1C1C;
+    --paper:#F9F8F6;
+    --hair:rgba(28,28,28,.15);
+    --weak:rgba(28,28,28,.55);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  .serif{font-family:Georgia,"Times New Roman","Songti SC","Noto Serif SC",serif;font-weight:400;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px;}
+
+  /* top bar */
+  .topbar{border-bottom:1px solid var(--hair);}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;}
+  .brand{font-size:15px;letter-spacing:.04em;}
+  .brand b{font-weight:600;}
+  .topnav{display:flex;gap:22px;font-size:13px;color:var(--weak);}
+  .topnav a{transition:color .3s;}
+
+  /* hero */
+  .hero{padding:72px 0 56px;border-bottom:1px solid var(--hair);}
+  .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--weak);margin-bottom:20px;}
+  .hero h1{font-size:clamp(34px,7vw,56px);line-height:1.15;letter-spacing:-.01em;margin-bottom:24px;}
+  .hero p.lead{font-size:17px;color:var(--weak);max-width:620px;}
+
+  /* two project cards (equal) */
+  .works{padding:56px 0;border-bottom:1px solid var(--hair);}
+  .sec-label{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--weak);margin-bottom:28px;}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .card{
+    border:1px solid var(--hair);
+    padding:30px 28px;
+    display:flex;flex-direction:column;
+    min-height:230px;
+    transition:border-color .3s, transform .3s;
+  }
+  .card:hover{border-color:var(--ink);transform:translateY(-2px);}
+  .card h3{font-size:22px;margin-bottom:4px;}
+  .card .tag{font-size:12px;color:var(--weak);letter-spacing:.05em;margin-bottom:16px;}
+  .card p.desc{font-size:14px;color:var(--weak);margin-bottom:18px;flex:1;}
+  .card .proves{font-size:12.5px;color:var(--ink);border-top:1px solid var(--hair);padding-top:14px;margin-bottom:18px;}
+  .card .proves span{display:inline-block;margin-right:6px;margin-bottom:4px;padding:2px 9px;border:1px solid var(--hair);}
+  .card .go{font-size:13px;letter-spacing:.04em;border-bottom:1px solid var(--ink);padding-bottom:2px;align-self:flex-start;transition:opacity .3s;}
+  .card:hover .go{opacity:.6;}
+
+  /* capability strip (通吃) */
+  .caps{padding:56px 0;border-bottom:1px solid var(--hair);}
+  .caps .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}
+  .cap h4{font-size:16px;margin-bottom:10px;}
+  .cap p{font-size:13.5px;color:var(--weak);}
+
+  /* contact */
+  .contact{padding:56px 0 72px;}
+  .contact h2{font-size:clamp(24px,5vw,34px);margin-bottom:8px;}
+  .contact p.sub{font-size:14px;color:var(--weak);margin-bottom:28px;}
+  .contact .rows{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;}
+  .crow{display:flex;justify-content:space-between;border-top:1px solid var(--hair);padding:14px 0;font-size:14px;}
+  .crow .k{color:var(--weak);}
+  .crow .v{font-weight:500;}
+  .crow .v.ph{color:rgba(28,28,28,.35);font-style:italic;font-weight:400;}
+
+  footer{border-top:1px solid var(--hair);padding:28px 0;font-size:12px;color:var(--weak);}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+
+  @media(max-width:680px){
+    .grid{grid-template-columns:1fr;}
+    .caps .grid3{grid-template-columns:1fr;gap:24px;}
+    .contact .rows{grid-template-columns:1fr;}
+    .topnav{display:none;}
+    .hero{padding:52px 0 40px;}
+    .works,.caps,.contact{padding:44px 0;}
+  }
+</style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand"><b>馍馍</b> · 作品集</div>
+      <nav class="topnav">
+        <a href="#works">作品</a>
+        <a href="#caps">能力</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">哲学 × 产品 / 运营 / 策划</div>
+      <h1 class="serif">没有等实习，<br/>而是为自己同类人做了产品。</h1>
+      <p class="lead">我是馍馍，湖北大学哲学系大三。自学 vibe coding，独立做出两个面向真实人群的小产品——一个帮文科同学把经历变成简历与岗位认知，一个用 AI 陪年轻人做一场「找到愿意做的事」的自我探索。下面是我的两个作品。</p>
+    </div>
+  </section>
+
+  <section class="works" id="works">
+    <div class="wrap">
+      <div class="sec-label">两个作品 · 平等呈现</div>
+      <div class="grid">
+
+        <a class="card" href="https://wzr0910.github.io/hub/" target="_blank" rel="noopener">
+          <h3 class="serif">PhilIntern</h3>
+          <div class="tag">哲学实习助手</div>
+          <p class="desc">把文科经历翻译成简历与岗位匹配的产品：用户研究 → 需求拆解 → 模块设计 → 迭代复盘。</p>
+          <div class="proves"><span>用户研究</span><span>需求拆解</span><span>内容/工具落地</span><span>复盘迭代</span></div>
+          <span class="go">查看作品 →</span>
+        </a>
+
+        <a class="card" href="https://wzr0910.github.io/child-game/" target="_blank" rel="noopener">
+          <h3 class="serif">孩子的游戏</h3>
+          <div class="tag">AI 哲学共读</div>
+          <p class="desc">用 3 轮对话，陪你共创一张「人生宣言卡」的产品。概念、文案、前端到部署，独立端到端交付。</p>
+          <div class="proves"><span>概念创意</span><span>内容调性</span><span>端到端交付</span></div>
+          <span class="go">查看作品 →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="caps" id="caps">
+    <div class="wrap">
+      <div class="sec-label">我能带来的 · 三套视角都通</div>
+      <div class="grid3">
+        <div class="cap">
+          <h4 class="serif">产品思维</h4>
+          <p>从真实用户痛点出发，拆需求、定 MVP 范围、记录迭代与复盘——两个项目都是这样长出来的。</p>
+        </div>
+        <div class="cap">
+          <h4 class="serif">运营 / 策划</h4>
+          <p>懂一类人（文科生、意义危机青年），能做调研、能产出内容与工具，也懂怎么把产品讲给别人听。</p>
+        </div>
+        <div class="cap">
+          <h4 class="serif">独特视角</h4>
+          <p>哲学的共情与结构化思考，是做产品判断的底色——这也是我把「短板」讲成「视角」的方式。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2 class="serif">联系我</h2>
+      <p class="sub">欢迎就实习 / 合作 / 交流来找我。</p>
+      <div class="rows">
+        <div class="crow"><span class="k">邮箱</span><span class="v">3304236052@qq.com</span></div>
+        <div class="crow"><span class="k">手机号</span><span class="v">13487095581</span></div>
+        <div class="crow"><span class="k">GitHub</span><span class="v">github.com/wzr0910</span></div>
+        <div class="crow"><span class="k">在线简历</span><span class="v ph">制作中（待补充）</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 馍馍 · 作品集</span>
+      <span>用 vibe coding 独立完成</span>
+    </div>
+  </footer>
+
+</body>
+</html>
