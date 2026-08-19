@@ -36,6 +36,7 @@
   .mark{width:34px;height:34px;position:relative;flex:none;}
   .mark .sq{position:absolute;inset:0;background:var(--blue);}
   .mark .ci{position:absolute;width:18px;height:18px;border-radius:50%;background:var(--red);right:-4px;bottom:-4px;border:2px solid var(--paper);}
+  .brand-name{font-family:"Jost","Noto Sans SC",sans-serif;}
   .links{display:flex;gap:0;}
   .links a{padding:6px 14px;font-weight:700;font-size:14px;border-left:2px solid var(--ink);position:relative;}
   .links a:first-child{border-left:none;}
@@ -43,10 +44,10 @@
 
   /* ===== HERO ===== */
   .hero{padding:64px 0 56px;position:relative;}
-  .hero-in{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;}
+  .hero-in{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center;}
   .kicker{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:13px;letter-spacing:3px;text-transform:uppercase;}
   .kicker .bar{width:40px;height:10px;background:var(--red);}
-  .hero h1{font-family:"Jost","Noto Sans SC",sans-serif;font-weight:900;font-size:clamp(58px,11vw,116px);line-height:.92;letter-spacing:-2px;margin:14px 0 4px;}
+  .hero h1{font-family:"Jost","Noto Sans SC",sans-serif;font-weight:900;font-size:clamp(42px,6.5vw,72px);line-height:.98;letter-spacing:-1px;margin:14px 0 4px;}
   .hero h1 .yl{color:var(--yellow);-webkit-text-stroke:2px var(--ink);}
   .role-line{font-size:clamp(18px,2.4vw,24px);font-weight:900;margin-bottom:18px;}
   .role-line b{background:var(--blue);color:#fff;padding:1px 8px;}
@@ -91,8 +92,10 @@
   .cap{background:#fff;border:3px solid var(--ink);padding:22px 20px;position:relative;box-shadow:8px 8px 0 var(--ink);}
   .cap:hover{transform:translate(-3px,-3px);box-shadow:12px 12px 0 var(--ink);}
   .cap .ic{width:48px;height:48px;margin-bottom:14px;}
-  .cap h4{font-size:17px;font-weight:900;margin-bottom:8px;}
-  .cap p{font-size:13px;color:#444;}
+  .cap h4{font-size:17px;font-weight:900;margin-bottom:10px;}
+  .cap ul{list-style:none;margin-top:2px;}
+  .cap li{position:relative;padding-left:18px;font-size:13px;color:#333;margin-bottom:10px;line-height:1.5;}
+  .cap li::before{content:"";position:absolute;left:0;top:6px;width:8px;height:8px;background:var(--ink);}
   .cap .idx{position:absolute;top:14px;right:16px;font-family:"Jost",sans-serif;font-weight:900;font-size:16px;color:var(--gray);}
 
   /* ===== ABOUT ===== */
@@ -100,7 +103,7 @@
   .about p{font-size:17px;line-height:1.8;}
   .about .hl{background:var(--yellow);padding:0 4px;font-weight:700;}
   .about .acc{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
-  .acc .b{width:54px;height:54px;flex:none;}
+  .about .acc .b{width:54px;height:54px;flex:none;}
 
   /* ===== CONTACT ===== */
   .crows{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
@@ -131,7 +134,7 @@
 
   <header class="nav">
     <div class="wrap nav-in">
-      <div class="brand"><span class="mark"><span class="sq"></span><span class="ci"></span></span>王梓睿</div>
+      <div class="brand"><span class="mark"><span class="sq"></span><span class="ci"></span></span><span class="brand-name">王梓睿</span></div>
       <nav class="links">
         <a href="#works">作品</a>
         <a href="#caps">能力</a>
@@ -252,37 +255,55 @@
           <svg class="ic" viewBox="0 0 48 48"><rect x="4" y="4" width="40" height="40" fill="#1E88E5"/></svg>
           <span class="idx jost">①</span>
           <h4>用户研究与需求拆解</h4>
-          <p>从真实用户痛点出发拆需求、定范围，并把过程沉淀成可复用的案例结构。</p>
+          <ul>
+            <li>从自身与同专业同学的真实困境出发，梳理求职痛点</li>
+            <li>把痛点拆成需求优先级，沉淀为 PhilIntern 案例结构</li>
+          </ul>
         </div>
         <div class="cap">
           <svg class="ic" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="#FDD835"/></svg>
           <span class="idx jost">②</span>
           <h4>产品与内容设计</h4>
-          <p>能写清产品定位与对话流程，也做得出有调性的内容与视觉呈现。</p>
+          <ul>
+            <li>为「孩子的游戏」写清 3 轮对话流程与产品定位</li>
+            <li>用宣言卡机制把抽象的意义危机做成可分享产物</li>
+          </ul>
         </div>
         <div class="cap">
           <svg class="ic" viewBox="0 0 48 48"><polygon points="24,4 44,44 4,44" fill="#E53935"/></svg>
           <span class="idx jost">③</span>
           <h4>游戏叙事与系统设计</h4>
-          <p>独立设计哲人王：统筹 20+ 事件与 300+ 台词，搭建选项、数值、结局的叙事系统。</p>
+          <ul>
+            <li>统筹哲人王 20+ 治国事件与 300+ 哲人台词</li>
+            <li>搭建「选项-数值-结局」叙事系统，导向多种结局</li>
+          </ul>
         </div>
         <div class="cap">
           <svg class="ic" viewBox="0 0 48 48"><rect x="6" y="6" width="16" height="16" fill="#E53935"/><rect x="26" y="6" width="16" height="16" fill="#1E88E5"/><rect x="6" y="26" width="16" height="16" fill="#FDD835"/><rect x="26" y="26" width="16" height="16" fill="#212121"/></svg>
           <span class="idx jost">④</span>
           <h4>端到端交付</h4>
-          <p>用前端工具把概念做成可上线的网站，并独立完成部署。</p>
+          <ul>
+            <li>用前端工具把 3 个产品概念做成可上线网站</li>
+            <li>独立完成部署，产出手机 / 电脑即点即玩链接</li>
+          </ul>
         </div>
         <div class="cap">
           <svg class="ic" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="#212121"/><circle cx="24" cy="24" r="9" fill="#FAFAFA"/></svg>
           <span class="idx jost">⑤</span>
           <h4>结构化思考</h4>
-          <p>哲学训练给的底子：拆问题、辨前提、把复杂的事讲清楚。</p>
+          <ul>
+            <li>哲学训练给的底子：拆问题、辨前提、把复杂事讲清</li>
+            <li>在作品里把「用户-问题-方案」的思考路径显性呈现</li>
+          </ul>
         </div>
         <div class="cap">
           <svg class="ic" viewBox="0 0 48 48"><polygon points="24,4 44,44 4,44" fill="#1E88E5"/><circle cx="24" cy="30" r="8" fill="#FDD835"/></svg>
           <span class="idx jost">⑥</span>
           <h4>协作与表达</h4>
-          <p>在书院做跨部门信息枢纽，在辩论队长期训练研究与公开表达。</p>
+          <ul>
+            <li>书院做跨部门信息枢纽，衔接班干部与辅导员</li>
+            <li>辩论队省级媒体活动公开亮相，锻炼研究与表达</li>
+          </ul>
         </div>
       </div>
     </div>
