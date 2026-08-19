@@ -22,6 +22,7 @@
   .intent{font-size:13px; color:var(--weak); margin-top:2px;}
   .contact{margin-top:12px; display:flex; flex-wrap:wrap; gap:6px 18px; font-size:12.5px; color:var(--weak);}
   .contact b{color:var(--ink); font-weight:500;}
+  .contact a{color:inherit; text-decoration:none; border-bottom:1px solid var(--hair);}
   .head{display:flex; justify-content:space-between; align-items:flex-start; gap:18px;}
   .head-left{flex:1; min-width:0;}
   .photo{width:86px; height:112px; object-fit:cover; border:1px solid var(--hair); border-radius:2px; flex:none;}
@@ -39,11 +40,10 @@
   .item-h .role{font-weight:400; color:var(--weak); font-size:12.5px; margin-left:6px;}
   .item-h .when{float:right; color:var(--weak); font-weight:400; font-size:12px;}
   .ph{color:#9a2b2b; background:rgba(154,43,43,.07); padding:0 4px; border-radius:2px; font-style:normal;}
-  .caps{display:flex; flex-wrap:wrap; gap:8px; margin-top:4px;}
-  .caps span{border:1px solid var(--hair); padding:3px 10px; font-size:12px;}
   .subs{margin:5px 0 2px; padding-left:2px;}
   .subs li{padding-left:16px; margin-bottom:4px; font-size:13px;}
   .subs li::before{content:"•"; color:var(--weak); left:2px;}
+  .skills li{font-size:13px; margin-bottom:5px;}
   .foot{margin-top:22px; font-size:11px; color:var(--weak); text-align:center;}
   @media print{
     body{background:#fff; padding:0; font-size:12.5px;}
@@ -82,23 +82,21 @@
     <div class="sec-h">项目经历 · 独立设计与端到端交付</div>
     <ul>
       <li>
+        <div class="item-h">哲人王 · 网页文字治国游戏 <span class="role">独立创作者 / 产品设计</span><span class="when">2026.08 – 至今</span></div>
+        把抽象的哲思变成可体验的决策：玩家以哲人王身份处理治国事件，每一次抉择通过数值系统导向不同结局，在游玩中直观感受不同治理立场的差异。统筹 20+ 治国事件与 300+ 哲人台词，自主搭建选项、数值、结局的叙事系统，用结构化内容设计支撑多条故事线并行，以数值驱动多结局兼顾可玩性与复玩率。从概念、文案、系统到前端独立完成端到端交付，支持手机与电脑即点即玩。
+      </li>
+      <li>
         <div class="item-h">孩子的游戏 · AI 哲学共读平台 <span class="role">独立创作者 / 产品设计</span><span class="when">2026.08 – 至今</span></div>
-        为 22–28 岁意义危机青年设计的 AI 共读产品：用 3 轮对话引导用户共创一张"人生宣言卡"，并支持将宣言卡保存为图片，方便用户自行分享到朋友圈、小红书等平台。
-        主导完成从概念、文案、前端到部署上线的端到端交付；产品立场鲜明，体现用户洞察与内容调性。
+        面向 22–28 岁对自我探索感兴趣的青年，设计一款 AI 共读 Web 应用，通过 3 轮对话引导用户共创人生宣言卡，解决传统心理测评工具同质化、缺乏深度对话的问题。
+        从自身与同专业同学的真实处境出发，梳理自我探索场景下的核心需求，完成产品定位、交互流程设计与前端开发，并部署至 GitHub Pages，实现端到端交付。
+        设计反测评差异化内容策略，以哲学文本为对话素材，提升内容调性与用户共鸣；已上线支持手机与电脑即点即玩，用户可将宣言卡保存为图片自行分享。
+        根据用户试用反馈持续迭代，优化对话引导逻辑。
       </li>
       <li>
         <div class="item-h">PhilIntern · 哲学实习助手 <span class="role">独立创作者</span><span class="when">2026.07 – 至今</span></div>
-        面向哲学与文科生的求职辅助工具。主导完成从用户研究、需求拆解、模块设计到迭代复盘的完整流程，
-        案例页以痛点、需求、模块、迭代、复盘的结构呈现，展示产品与运营的思考路径。
-      </li>
-      <li>
-        <div class="item-h">哲人王 · 网页文字治国游戏 <span class="role">独立创作者 / 产品设计</span><span class="when">2026.08 – 至今</span></div>
-        从 0 到 1 设计一款即点即玩的网页文字策略游戏：玩家以"哲人王"身份听取哲人谏言、对治国事件抉择，数值变化导向不同结局。
-        <ul class="subs">
-          <li>设计海报式起始界面与钩子文案，以四位哲人圆形头像重构首屏，提升吸引力。</li>
-          <li>统筹 20+ 治国事件与 300+ 哲人台词，搭建"选项、数值、结局"叙事系统。</li>
-          <li>完成部署上线，产出可分享链接，支持手机 / 电脑即点即玩。</li>
-        </ul>
+        针对哲学与文科生实习信息分散、岗位匹配度低的问题，从自身与同专业同学的真实困境出发，梳理核心痛点。
+        基于需求拆解设计功能模块，涵盖信息聚合、岗位匹配与案例展示；输出可复用案例页，按痛点、需求、模块、迭代、复盘的结构呈现，展示产品与运营的思考路径。
+        已在 GitHub 开源（<a href="https://github.com/wzr0910/hub">github.com/wzr0910/hub</a>），持续根据同学试用反馈迭代，验证产品核心假设。
       </li>
     </ul>
   </div>
@@ -107,45 +105,36 @@
     <div class="sec-h">实践 / 实习经历</div>
     <ul>
       <li>
-        <div class="item-h">民革机关办公室 <span class="role">实习</span><span class="when">2026.05 – 2026.07</span></div>
-        协助统筹"民革 e 家"系统成员信息录入专项，在真实政务场景中锻炼数据治理与跨人协调能力。
-        <ul class="subs">
-          <li>协助统筹约 2000 名成员信息按组织架构分批录入：负责任务分配、问题收集与向上请示，并参与一线录入，最终全员信息完成入库。</li>
-          <li>运用 Excel 对成员数据进行清洗与核对，保障录入准确率与推进节奏。</li>
-          <li>旁听 2–3 场大型会议的组织协调，并跟进学习公文写作规范与排版。</li>
-        </ul>
+        <div class="item-h">民革机关办公室 <span class="role">实习生</span><span class="when">2026.05 – 2026.07</span></div>
+        负责 2000+ 成员信息录入专项的任务拆解与进度管理，制定任务分配 SOP，协调多人协作，推动全员信息按期入库。
+        收集一线录入问题并分类汇总，形成问题处理文档，向上汇报并推动解决。
+        使用 Excel 进行数据清洗与交叉核对，保障数据质量，并旁听 2–3 场大型会议的组织协调，跟进学习公文写作规范与排版。
       </li>
       <li>
-        <div class="item-h">书院 跨院学生组织 <span class="role">行政事务部成员</span><span class="when">2023.10 – 2024.06</span></div>
+        <div class="item-h">湖北大学思明书院 <span class="role">行政事务部成员</span><span class="when">2023.10 – 2024.06</span></div>
         在文科多院联合的书院制组织中承担信息枢纽与内容运营，积累跨部门协作与基础运营经验。
-        <ul class="subs">
-          <li>担任各班班干部与辅导员之间的信息桥梁：协助通知指令下达与材料收集，保障书院事务流转顺畅。</li>
-          <li>轮值辅导员办公室，协助处理日常事务，包括学生成绩信息录入与资料整理。</li>
-          <li>参与运营书院宣传账号，统筹活动宣传发布，并与组织事务部等多部门协作推进事务。</li>
-        </ul>
+        担任各班班干部与辅导员之间的信息桥梁，协助通知指令下达与材料收集，保障书院事务流转顺畅。
+        参与运营书院宣传账号，统筹活动宣传发布，并与多部门协作推进事务。
       </li>
       <li>
         <div class="item-h">辩论队 <span class="role">队员</span><span class="when">2023.10 – 至今</span></div>
-        长期训练研究、逻辑与公开表达，并在省级媒体合作活动中公开亮相。
-        <ul class="subs">
-          <li>参与湖北日报传媒集团"追寻身边的星"活动，围绕"见义是否应当勇为"与道德模范对话并进行模拟辩论，活动获楚天都市报、澎湃新闻等媒体报道。</li>
-          <li>系统参与备赛全流程，包括检索辩题资料与数据、集中讨论确立核心立论、模拟对方观点预演反驳，锻炼研究与逻辑表达能力。</li>
-          <li>作为学院与书院双队成员，参与队内训练与赛事讨论，具备团队协作备赛经验。</li>
-        </ul>
+        在湖北日报传媒集团"追寻身边的星"活动中，负责资料检索与立论框架搭建，作为主辩与道德模范模拟辩论，活动获楚天都市报、澎湃新闻等媒体报道。
+        系统参与备赛全流程，包括检索辩题资料、集中讨论确立核心立论、模拟对方观点预演反驳，锻炼研究与逻辑表达能力。
+        作为学院与书院双队成员，参与队内训练与赛事讨论，具备团队协作备赛经验。
       </li>
     </ul>
   </div>
 
   <div class="sec">
     <div class="sec-h">能力与特质</div>
-    <div class="caps">
-      <span>独立产品设计与端到端交付</span>
-      <span>用户研究与需求拆解</span>
-      <span>内容创作与游戏生态理解</span>
-      <span>结构化思考 · 哲学训练</span>
-      <span>AI 产品判断与伦理意识</span>
-      <span>公文 / 活动写作</span>
-    </div>
+    <ul class="skills">
+      <li>产品设计：用户研究与需求拆解、产品流程设计、PRD 撰写</li>
+      <li>AI 应用：AI 对话产品设计、Prompt 设计与分步引导、AI 伦理判断</li>
+      <li>开发部署：React、Next.js、GitHub Pages、HTML、CSS，可独立部署个人项目</li>
+      <li>数据分析：Excel 数据清洗、交叉核对、基础数据可视化</li>
+      <li>内容能力：公文写作、活动宣传、内容调性把控</li>
+      <li>核心特质：哲学结构化思考、端到端交付、用户洞察、快速学习</li>
+    </ul>
   </div>
 
   <div class="foot">本简历为母本，按目标岗位用《JD 适配指南》调整顺序与强调点后投递。</div>
