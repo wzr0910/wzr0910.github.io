@@ -120,6 +120,11 @@
   .foot-in .blk{display:flex;gap:8px;align-items:center;}
   .foot-in .d{width:14px;height:14px;}
 
+  /* ===== 新增：求职意向 / 作品结果 / 关于补充 ===== */
+  .intent{display:inline-block;font-weight:900;font-size:14px;letter-spacing:.5px;background:var(--yellow);border:2px solid var(--ink);padding:5px 14px;margin:10px 0 2px;}
+  .result{font-size:12.5px;font-weight:700;color:var(--blue);border-left:4px solid var(--blue);padding:4px 0 4px 9px;margin:12px 0 0;line-height:1.45;}
+  .about .about-2{font-size:15px;line-height:1.8;margin-top:18px;color:#333;}
+
   @media(max-width:880px){
     .hero-in{grid-template-columns:1fr;gap:36px;}
     .hero-art{max-width:360px;}
@@ -151,6 +156,7 @@
         <h1 class="jost">王<span class="yl">梓</span>睿</h1>
         <p class="role-line">哲学背景的<b>产品创作者</b></p>
         <p class="lead">我把哲学训练变成能上手的数字产品。这里收录三个从 0 到 1 独立完成的项目，以及它们背后的思考。比起空谈方法，我更相信把想法做成能用的东西。</p>
+        <p class="intent">求职意向 · 产品 / 运营 / 策划实习</p>
         <div class="tags">
           <span class="tag r">产品思维</span>
           <span class="tag y">内容设计</span>
@@ -199,7 +205,8 @@
           <div class="card-body">
             <div class="ttl">PhilIntern</div>
             <div class="sub">哲学实习助手</div>
-            <p class="desc">面向哲学与文科生的职业辅助工具。独立完成从用户研究、需求拆解、模块设计到迭代复盘的完整流程。</p>
+            <p class="desc">面向哲学与文科生的职业辅助工具。主导从用户研究、需求拆解、模块设计到迭代复盘的完整流程。</p>
+            <p class="result">已在 GitHub 开源，根据同学试用反馈持续迭代</p>
             <div class="chips"><span>用户研究</span><span>需求拆解</span><span>0 到 1 交付</span><span>复盘迭代</span></div>
             <span class="go">查看作品 <span class="ar"></span></span>
           </div>
@@ -217,6 +224,7 @@
             <div class="ttl">孩子的游戏</div>
             <div class="sub">AI 哲学共读平台</div>
             <p class="desc">为 22–28 岁青年设计的 AI 共读产品，用 3 轮对话引导用户共创一张人生宣言卡，并支持保存为图片分享。</p>
+            <p class="result">已部署上线，手机 / 电脑均可即点即玩</p>
             <div class="chips"><span>AI 产品</span><span>内容设计</span><span>端到端交付</span></div>
             <span class="go">查看作品 <span class="ar"></span></span>
           </div>
@@ -234,6 +242,7 @@
             <div class="ttl">哲人王</div>
             <div class="sub">网页文字治国游戏</div>
             <p class="desc">从 0 到 1 的文字策略游戏。玩家以哲人王身份处理治国事件，数值变化导向不同结局。</p>
+            <p class="result">已上线，玩家可体验多种数值导向的结局</p>
             <div class="chips"><span>20+ 事件</span><span>300+ 台词</span><span>叙事系统</span></div>
             <span class="go">查看作品 <span class="ar"></span></span>
           </div>
@@ -317,6 +326,7 @@
       </div>
       <div class="about-in about">
         <p>我是王梓睿，湖北大学哲学专业。比起停留在"想清楚"，我更在意<span class="hl">把想清楚的东西做出来</span>——这三个产品都从一个具体的人的困境出发，自己设计、自己写、自己上线。哲学训练给我拆解问题与讲清逻辑的底子，vibe coding 让我能把脑子里的东西快速变成现实。我相信好产品来自对一类人的真实理解，而不是套模板。</p>
+        <p class="about-2">我的工作方式：<span class="hl">自己负责产品定义、需求拆解与设计决策，用 AI 承担代码执行</span>，靠 vibe coding 把想法快速做成能用的东西。我对内容运营与用户增长尤其感兴趣，三个作品背后都是对一类真实用户的理解与触达。</p>
         <div class="acc">
           <svg class="b" viewBox="0 0 54 54"><circle cx="27" cy="27" r="24" fill="#E53935"/></svg>
           <svg class="b" viewBox="0 0 54 54"><rect x="5" y="5" width="44" height="44" fill="#1E88E5"/></svg>
@@ -337,6 +347,7 @@
         <div class="crow"><span class="k">邮箱</span><span class="v">3304236052@qq.com</span></div>
         <div class="crow"><span class="k">手机</span><span class="v">13487095581</span></div>
         <div class="crow"><span class="k">GitHub</span><span class="v">github.com/wzr0910</span></div>
+        <div class="crow"><span class="k">在线简历</span><span class="v"><a href="resume.html" target="_blank" rel="noopener">点击查看 ↗</a></span></div>
         <div class="crow"><span class="k">作品集</span><span class="v">wzr0910.github.io</span></div>
       </div>
     </div>
