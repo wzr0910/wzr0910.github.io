@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>王梓睿 · 作品集</title>
 <meta name="description" content="哲学背景的产品创作者，独立设计与开发三个从 0 到 1 的数字产品：PhilIntern 文科生 AI 求职助手、孩子的游戏 AI 共读、哲人王文字策略游戏。收录每个项目的背景、设计过程与复盘。" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><rect width='48' height='48' fill='%23FAFAFA'/><rect x='8' y='8' width='22' height='22' fill='%231E88E5'/><circle cx='34' cy='34' r='10' fill='%23E53935'/></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -122,6 +123,7 @@
 
   /* ===== 新增：求职意向 / 作品结果 / 关于补充 ===== */
   .intent{display:inline-block;font-weight:900;font-size:14px;letter-spacing:.5px;background:var(--yellow);border:2px solid var(--ink);padding:5px 14px;margin:10px 0 2px;}
+  .edu{font-size:13px;font-weight:700;color:#555;margin:2px 0 0;}
   .result{font-size:12.5px;font-weight:700;color:var(--blue);border-left:4px solid var(--blue);padding:4px 0 4px 9px;margin:12px 0 0;line-height:1.45;}
   .about .about-2{font-size:15px;line-height:1.8;margin-top:18px;color:#333;}
   .adv-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:24px;}
@@ -165,7 +167,9 @@
     .hero-art{max-width:360px;}
     .grid,.grid-caps,.adv-grid{grid-template-columns:1fr;}
     .crows{grid-template-columns:1fr;}
-    .links{display:none;}
+    .nav-in{flex-direction:column;height:auto;align-items:stretch;gap:4px;padding:10px 0;}
+    .links{display:flex;flex-wrap:nowrap;overflow-x:auto;width:100%;border-top:3px solid var(--ink);padding-top:8px;}
+    .links a{border-left:2px solid var(--ink);flex:none;white-space:nowrap;}
     .vtext{display:none;}
   }
 </style>
@@ -193,6 +197,7 @@
         <p class="role-line">哲学背景的<b>产品创作者</b></p>
         <p class="lead">我把哲学训练变成能上手的数字产品。这里收录三个从 0 到 1 独立完成的项目，以及它们背后的思考。比起空谈方法，我更相信把想法做成能用的东西。</p>
         <p class="intent">求职意向 · AI 产品运营 / 内容运营</p>
+        <p class="edu">湖北大学 · 哲学专业 · 2023–2027（2027 届）· 英语六级 CET-6</p>
         <div class="tags">
           <span class="tag r">产品思维</span>
           <span class="tag y">内容设计</span>
@@ -234,8 +239,13 @@
           <div class="card-top" style="background:var(--blue);">
             <span class="num jost">01</span>
             <svg viewBox="0 0 300 128" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%;">
-              <circle cx="240" cy="64" r="46" fill="#FAFAFA"/>
-              <rect x="20" y="40" width="60" height="60" fill="#FDD835"/>
+              <rect x="16" y="16" width="268" height="96" fill="#FAFAFA"/>
+              <rect x="16" y="16" width="268" height="14" fill="#212121"/>
+              <circle cx="28" cy="23" r="3" fill="#E53935"/><circle cx="40" cy="23" r="3" fill="#FDD835"/><circle cx="52" cy="23" r="3" fill="#1E88E5"/>
+              <rect x="28" y="42" width="180" height="10" rx="2" fill="#212121" opacity=".18"/>
+              <rect x="28" y="60" width="244" height="9" rx="2" fill="#212121" opacity=".12"/>
+              <rect x="28" y="76" width="200" height="9" rx="2" fill="#212121" opacity=".12"/>
+              <rect x="28" y="92" width="70" height="13" rx="2" fill="#1E88E5"/>
             </svg>
           </div>
           <div class="card-body">
@@ -252,8 +262,12 @@
           <div class="card-top" style="background:var(--yellow);">
             <span class="num jost">02</span>
             <svg viewBox="0 0 300 128" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%;">
-              <polygon points="60,108 150,18 240,108" fill="#212121"/>
-              <circle cx="240" cy="36" r="22" fill="#E53935"/>
+              <rect x="16" y="16" width="268" height="96" fill="#FAFAFA"/>
+              <rect x="16" y="16" width="268" height="14" fill="#212121"/>
+              <circle cx="28" cy="23" r="3" fill="#E53935"/><circle cx="40" cy="23" r="3" fill="#FDD835"/><circle cx="52" cy="23" r="3" fill="#1E88E5"/>
+              <rect x="150" y="40" width="120" height="16" rx="8" fill="#212121" opacity=".15"/>
+              <rect x="30" y="62" width="150" height="22" rx="8" fill="#E53935"/>
+              <rect x="30" y="90" width="120" height="14" rx="7" fill="#212121" opacity=".15"/>
             </svg>
           </div>
           <div class="card-body">
@@ -270,8 +284,12 @@
           <div class="card-top" style="background:var(--red);">
             <span class="num jost">03</span>
             <svg viewBox="0 0 300 128" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%;">
-              <rect x="40" y="24" width="64" height="64" fill="#FAFAFA"/>
-              <circle cx="210" cy="64" r="40" fill="#1E88E5"/>
+              <rect x="16" y="16" width="268" height="96" fill="#FAFAFA"/>
+              <rect x="16" y="16" width="268" height="14" fill="#212121"/>
+              <circle cx="28" cy="23" r="3" fill="#E53935"/><circle cx="40" cy="23" r="3" fill="#FDD835"/><circle cx="52" cy="23" r="3" fill="#1E88E5"/>
+              <rect x="28" y="40" width="200" height="10" rx="2" fill="#212121" opacity=".18"/>
+              <rect x="28" y="60" width="244" height="16" rx="3" fill="#1E88E5"/>
+              <rect x="28" y="84" width="244" height="16" rx="3" fill="#FDD835"/>
             </svg>
           </div>
           <div class="card-body">
@@ -296,58 +314,66 @@
         <svg class="sec-shape" viewBox="0 0 46 46"><rect x="6" y="6" width="34" height="34" fill="#1E88E5"/><circle cx="23" cy="23" r="9" fill="#FDD835"/></svg>
       </div>
 
+      <div class="note" style="margin-bottom:28px;">验证范围说明：三个项目均为个人作品、早期验证阶段，真实使用以自身与约 8 位内测用户为主；以下用户反馈为方向性校准，非统计结论。</div>
+
       <div class="case">
         <div class="case-h">
-          <span class="no" style="background:var(--red);">01</span>
-          <div><div class="t">哲人王 · 网页文字治国游戏</div><div class="s">旗舰项 · 产品设计 与 独立开发</div></div>
+          <span class="no" style="background:var(--blue);">01</span>
+          <div><div class="t">PhilIntern · 文科生 AI 求职助手</div><div class="s">研究证据项 · 产品设计 与 开源</div></div>
         </div>
         <div class="deep-link">
-          <span class="dl-pos">将哲学治理命题做成多结局、数值驱动的文字决策游戏，让玩家在体验中理解不同治理取向的代价。</span>
+          <span class="dl-pos">把文科生求职的信息差，做成「痛点 → 方案」讲清的 AI 工具集，覆盖求职全流程。</span>
           <div class="cta-row">
-            <a class="cta r" href="https://wzr0910.github.io/philosopher-king" target="_blank" rel="noopener">在线体验 <span class="ar"></span></a>
+            <a class="cta b" href="https://wzr0910.github.io/hub" target="_blank" rel="noopener">在线体验 <span class="ar"></span></a>
+            <a class="cta y" href="https://github.com/wzr0910/hub" target="_blank" rel="noopener">GitHub <span class="ar"></span></a>
           </div>
         </div>
         <div class="case-b">
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--red);"></span>背景与问题</div>
-            <p>哲学传播长期停留在文本，年轻人「读得进句子、难有参与感」。我将治理命题转化为可交互的决策：玩家以哲人王身份处理治国事件，每个选择触发数值后果，在体验中理解不同治理取向的代价。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--blue);"></span>背景与问题</div>
+            <p>哲学与文科生找实习时，信息分散、不知投什么、不会准备，缺一个把「痛点 → 方案」讲清的抓手。我把自身困境抽象成通用工具：信息聚合 + 岗位匹配 + 案例展示，帮同类同学把求职想清楚。核心痛点：实习信息散、匹配度低、表达无抓手。</p>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--yellow);"></span>用户洞察与验证</div>
-            <p class="method">调研方式：自身作为目标用户 + 亲友试玩（5+ 人）；反馈为口述方向性总结。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--red);"></span>用户洞察与验证</div>
+            <p class="method">调研方式：自身求职痛点 + <b>5+ 位文科同学轻量访谈</b> + 邀请 3 位目标用户内测。</p>
             <ul>
-              <li>「选项后果看不清」→ 推动数值维度拆得更细、变化更直观。</li>
-              <li>「想看不同结局但不想重开」→ 推动加结局分支提示。</li>
-              <li>「文字量可再少」→ 推动事件文案更短、更有张力。</li>
+              <li>「想要能直接抄的简历结构」→ 推动多岗位简历生成器。</li>
+              <li>「想知道这个岗到底要什么能力」→ 推动岗位匹配度分析。</li>
+              <li>「匹配度想看得分理由，不想只看分数」→ 推动结果里写理由。</li>
             </ul>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--blue);"></span>产品设计</div>
-            <p>核心系统：选项 → 数值变化 → 结局判定。我独立设计 <b>20+ 治国事件、300+ 哲人台词分支</b>，搭建「选项-数值-结局」叙事系统与数值平衡系统，10 天内从设计到上线。原型先用纸面事件卡跑通逻辑，再做前端实现。单事件处理流程：</p>
-            <svg class="flow" viewBox="0 0 560 130" role="img" aria-label="哲人王单事件处理流程">
-              <rect x="8" y="40" width="118" height="50" fill="#fff" stroke="#212121" stroke-width="3"/>
-              <text x="67" y="70" font-size="14" font-weight="900" text-anchor="middle" fill="#212121">治国事件</text>
-              <rect x="152" y="40" width="118" height="50" fill="#fff" stroke="#212121" stroke-width="3"/>
-              <text x="211" y="64" font-size="14" font-weight="900" text-anchor="middle" fill="#212121">玩家抉择</text>
-              <text x="211" y="82" font-size="10" font-weight="700" text-anchor="middle" fill="#555">2–3 个选项</text>
-              <rect x="296" y="40" width="118" height="50" fill="#FDD835" stroke="#212121" stroke-width="3"/>
-              <text x="355" y="60" font-size="14" font-weight="900" text-anchor="middle" fill="#212121">数值引擎</text>
-              <text x="355" y="78" font-size="10" font-weight="700" text-anchor="middle" fill="#212121">民心·国库·声望</text>
-              <rect x="440" y="40" width="118" height="50" fill="#1E88E5" stroke="#212121" stroke-width="3"/>
-              <text x="499" y="64" font-size="14" font-weight="900" text-anchor="middle" fill="#fff">结局判定</text>
-              <text x="499" y="82" font-size="10" font-weight="700" text-anchor="middle" fill="#fff">达阈值→多结局</text>
-              <polygon points="126,65 146,65 146,57 138,65 146,73 146,65" fill="#212121"/>
-              <polygon points="270,65 290,65 290,57 282,65 290,73 290,65" fill="#212121"/>
-              <polygon points="414,65 434,65 434,57 426,65 434,73 434,65" fill="#212121"/>
+            <div class="blk-h"><span class="dot" style="background:var(--yellow);"></span>产品设计</div>
+            <p>用 DeepSeek + OpenCode 开发，7 天内上线 MVP 并 GitHub 开源。功能模块覆盖求职全流程：潜力挖掘器 / 多岗位简历生成器 / HR 沟通助手 / 岗位匹配度分析 / 能力速成清单 等 <b>6 个工具模块</b>。建立「AI 生成 + 人工校准」内容审核机制确保输出质量。工具链路（覆盖求职全流程）：</p>
+            <svg class="flow" viewBox="0 0 560 120" role="img" aria-label="PhilIntern 工具链路">
+              <rect x="6" y="38" width="88" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
+              <text x="50" y="58" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">输入画像</text>
+              <text x="50" y="76" font-size="10" font-weight="700" text-anchor="middle" fill="#555">专业·目标</text>
+              <rect x="118" y="38" width="88" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
+              <text x="162" y="65" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">潜力挖掘</text>
+              <rect x="230" y="38" width="88" height="46" fill="#1E88E5" stroke="#212121" stroke-width="3"/>
+              <text x="274" y="58" font-size="13" font-weight="900" text-anchor="middle" fill="#fff">岗位匹配</text>
+              <text x="274" y="76" font-size="10" font-weight="700" text-anchor="middle" fill="#fff">带理由</text>
+              <rect x="342" y="38" width="88" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
+              <text x="386" y="65" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">简历生成</text>
+              <rect x="454" y="38" width="88" height="46" fill="#FDD835" stroke="#212121" stroke-width="3"/>
+              <text x="498" y="58" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">速成·HR</text>
+              <text x="498" y="76" font-size="10" font-weight="700" text-anchor="middle" fill="#212121">助手</text>
+              <polygon points="94,61 114,61 114,53 106,61 114,69 114,61" fill="#212121"/>
+              <polygon points="206,61 226,61 226,53 218,61 226,69 226,61" fill="#212121"/>
+              <polygon points="318,61 338,61 338,53 330,61 338,69 338,61" fill="#212121"/>
+              <polygon points="430,61 450,61 450,53 442,61 450,69 450,61" fill="#212121"/>
             </svg>
+            <p>6 个模块全部经「AI 生成 + 人工校准」审核后开源在 GitHub，沉淀为可复用的案例与方法。</p>
+            <p class="method">方法论沉淀：案例页结构为「痛点 → 需求 → 模块 → 迭代 → 复盘」，形成可复用方法论。</p>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--red);"></span>迭代与优化</div>
-            <p>工程侧：测试中发现加载超时，独立排查定位到<b>资源文件过大</b>的根因，通过压缩资源与调整加载策略解决，体验明显变快。体验侧：数值维度变化更直观、结局更可感知，事件文案持续往「更短、更有张力」改。未来方向：补数值平衡表避免维度过早锁死，并邀请非哲学背景用户验证门槛。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--blue);"></span>迭代与优化</div>
+            <p>从信息聚合 → 加匹配度分析 → 加可复用案例结构。下一步假设：按年级 / 专业做用户分层能提升建议采纳率；验证指标：内测用户「愿意照做」的比例。</p>
           </div>
           <div class="blk">
             <div class="blk-h"><span class="dot" style="background:var(--ink);"></span>复盘与收获</div>
-            <p>学到：系统深度比美术更能留住人，文字产品的关键是「让选择有意义」。若重来，会先做数值平衡表再写事件，并更早邀请非哲学背景者试玩验证「门槛够不够低」。</p>
+            <p>学到：「把个人困境抽象成通用工具」本身就是产品能力，也是我能讲清的方法论。若重来，会先做用户分层再写功能，而非先堆模块。</p>
           </div>
         </div>
       </div>
@@ -404,7 +430,7 @@
           </div>
           <div class="blk">
             <div class="blk-h"><span class="dot" style="background:var(--yellow);"></span>迭代与优化</div>
-            <p>据小范围体验反馈，<b>完成 2 轮对话流程迭代</b>：从「问答式」改为「3 轮共创式」，第 2 轮加入深挖追问；并据测试反馈优化对话节奏与内容呈现，关注完成率与停留时长。未来方向：加对话分支防跑题、加「再来一次换一张」降低试错成本。</p>
+            <p>据小范围体验反馈，<b>完成 2 轮对话流程迭代</b>：从「问答式」改为「3 轮共创式」，第 2 轮加入深挖追问；并据测试反馈优化对话节奏与内容呈现，关注完成率与停留时长。下一步假设：分支防跑题能提升宣言卡与对话的相关度；验证指标：用户自评「这说的就是我」的占比。</p>
           </div>
           <div class="blk">
             <div class="blk-h"><span class="dot" style="background:var(--ink);"></span>复盘与收获</div>
@@ -415,62 +441,56 @@
 
       <div class="case">
         <div class="case-h">
-          <span class="no" style="background:var(--blue);">03</span>
-          <div><div class="t">PhilIntern · 文科生 AI 求职助手</div><div class="s">研究证据项 · 产品设计 与 开源</div></div>
+          <span class="no" style="background:var(--red);">03</span>
+          <div><div class="t">哲人王 · 网页文字治国游戏</div><div class="s">旗舰项 · 产品设计 与 独立开发</div></div>
         </div>
         <div class="deep-link">
-          <span class="dl-pos">把文科生求职的信息差，做成「痛点 → 方案」讲清的 AI 工具集，覆盖求职全流程。</span>
+          <span class="dl-pos">将哲学治理命题做成多结局、数值驱动的文字决策游戏，让玩家在体验中理解不同治理取向的代价。</span>
           <div class="cta-row">
-            <a class="cta b" href="https://wzr0910.github.io/hub" target="_blank" rel="noopener">在线体验 <span class="ar"></span></a>
-            <a class="cta y" href="https://github.com/wzr0910/hub" target="_blank" rel="noopener">GitHub <span class="ar"></span></a>
+            <a class="cta r" href="https://wzr0910.github.io/philosopher-king" target="_blank" rel="noopener">在线体验 <span class="ar"></span></a>
           </div>
         </div>
         <div class="case-b">
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--blue);"></span>背景与问题</div>
-            <p>哲学与文科生找实习时，信息分散、不知投什么、不会准备，缺一个把「痛点 → 方案」讲清的抓手。我把自身困境抽象成通用工具：信息聚合 + 岗位匹配 + 案例展示，帮同类同学把求职想清楚。核心痛点：实习信息散、匹配度低、表达无抓手。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--red);"></span>背景与问题</div>
+            <p>哲学传播长期停留在文本，年轻人「读得进句子、难有参与感」。我将治理命题转化为可交互的决策：玩家以哲人王身份处理治国事件，每个选择触发数值后果，在体验中理解不同治理取向的代价。</p>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--red);"></span>用户洞察与验证</div>
-            <p class="method">调研方式：自身求职痛点 + <b>5+ 位文科同学轻量访谈</b> + 邀请 3 位目标用户内测。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--yellow);"></span>用户洞察与验证</div>
+            <p class="method">调研方式：自身作为目标用户 + 亲友试玩（5+ 人）；反馈为口述方向性总结。</p>
             <ul>
-              <li>「想要能直接抄的简历结构」→ 推动多岗位简历生成器。</li>
-              <li>「想知道这个岗到底要什么能力」→ 推动岗位匹配度分析。</li>
-              <li>「匹配度想看得分理由，不想只看分数」→ 推动结果里写理由。</li>
+              <li>「选项后果看不清」→ 推动数值维度拆得更细、变化更直观。</li>
+              <li>「想看不同结局但不想重开」→ 推动加结局分支提示。</li>
+              <li>「文字量可再少」→ 推动事件文案更短、更有张力。</li>
             </ul>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--yellow);"></span>产品设计</div>
-            <p>用 DeepSeek + OpenCode 开发，7 天内上线 MVP 并 GitHub 开源。功能模块覆盖求职全流程：潜力挖掘器 / 多岗位简历生成器 / HR 沟通助手 / 岗位匹配度分析 / 能力速成清单 等 <b>6 个工具模块</b>。建立「AI 生成 + 人工校准」内容审核机制确保输出质量。工具链路（覆盖求职全流程）：</p>
-            <svg class="flow" viewBox="0 0 560 120" role="img" aria-label="PhilIntern 工具链路">
-              <rect x="6" y="38" width="88" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
-              <text x="50" y="58" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">输入画像</text>
-              <text x="50" y="76" font-size="10" font-weight="700" text-anchor="middle" fill="#555">专业·目标</text>
-              <rect x="118" y="38" width="88" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
-              <text x="162" y="65" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">潜力挖掘</text>
-              <rect x="230" y="38" width="88" height="46" fill="#1E88E5" stroke="#212121" stroke-width="3"/>
-              <text x="274" y="58" font-size="13" font-weight="900" text-anchor="middle" fill="#fff">岗位匹配</text>
-              <text x="274" y="76" font-size="10" font-weight="700" text-anchor="middle" fill="#fff">带理由</text>
-              <rect x="342" y="38" width="88" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
-              <text x="386" y="65" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">简历生成</text>
-              <rect x="454" y="38" width="88" height="46" fill="#FDD835" stroke="#212121" stroke-width="3"/>
-              <text x="498" y="58" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">速成·HR</text>
-              <text x="498" y="76" font-size="10" font-weight="700" text-anchor="middle" fill="#212121">助手</text>
-              <polygon points="94,61 114,61 114,53 106,61 114,69 114,61" fill="#212121"/>
-              <polygon points="206,61 226,61 226,53 218,61 226,69 226,61" fill="#212121"/>
-              <polygon points="318,61 338,61 338,53 330,61 338,69 338,61" fill="#212121"/>
-              <polygon points="430,61 450,61 450,53 442,61 450,69 450,61" fill="#212121"/>
+            <div class="blk-h"><span class="dot" style="background:var(--blue);"></span>产品设计</div>
+            <p>核心系统：选项 → 数值变化 → 结局判定。我独立设计 <b>20+ 治国事件、300+ 哲人台词分支</b>，搭建「选项-数值-结局」叙事系统与数值平衡系统，10 天内从设计到上线。原型先用纸面事件卡跑通逻辑，再做前端实现。单事件处理流程：</p>
+            <svg class="flow" viewBox="0 0 560 130" role="img" aria-label="哲人王单事件处理流程">
+              <rect x="8" y="40" width="118" height="50" fill="#fff" stroke="#212121" stroke-width="3"/>
+              <text x="67" y="70" font-size="14" font-weight="900" text-anchor="middle" fill="#212121">治国事件</text>
+              <rect x="152" y="40" width="118" height="50" fill="#fff" stroke="#212121" stroke-width="3"/>
+              <text x="211" y="64" font-size="14" font-weight="900" text-anchor="middle" fill="#212121">玩家抉择</text>
+              <text x="211" y="82" font-size="10" font-weight="700" text-anchor="middle" fill="#555">2–3 个选项</text>
+              <rect x="296" y="40" width="118" height="50" fill="#FDD835" stroke="#212121" stroke-width="3"/>
+              <text x="355" y="60" font-size="14" font-weight="900" text-anchor="middle" fill="#212121">数值引擎</text>
+              <text x="355" y="78" font-size="10" font-weight="700" text-anchor="middle" fill="#212121">民心·国库·声望</text>
+              <rect x="440" y="40" width="118" height="50" fill="#1E88E5" stroke="#212121" stroke-width="3"/>
+              <text x="499" y="64" font-size="14" font-weight="900" text-anchor="middle" fill="#fff">结局判定</text>
+              <text x="499" y="82" font-size="10" font-weight="700" text-anchor="middle" fill="#fff">达阈值→多结局</text>
+              <polygon points="126,65 146,65 146,57 138,65 146,73 146,65" fill="#212121"/>
+              <polygon points="270,65 290,65 290,57 282,65 290,73 290,65" fill="#212121"/>
+              <polygon points="414,65 434,65 434,57 426,65 434,73 434,65" fill="#212121"/>
             </svg>
-            <p>6 个模块全部经「AI 生成 + 人工校准」审核后开源在 GitHub，便于同学复用到自己的求职。</p>
-            <p class="method">方法论沉淀：案例页结构为「痛点 → 需求 → 模块 → 迭代 → 复盘」，形成可复用方法论。</p>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--blue);"></span>迭代与优化</div>
-            <p>从信息聚合 → 加匹配度分析 → 加可复用案例结构。未来方向：做用户分层（按年级 / 专业）让建议更准；补「投递后怎么跟进」模块。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--red);"></span>迭代与优化</div>
+            <p>工程侧：测试中发现加载超时，独立排查定位到<b>资源文件过大</b>的根因，通过压缩资源与调整加载策略解决，体验明显变快。体验侧：数值维度变化更直观、结局更可感知，事件文案持续往「更短、更有张力」改。下一步假设：数值平衡表能让更多结局可达；验证指标：非哲学背景试玩者「能否说出治理取向差异」的完成率。</p>
           </div>
           <div class="blk">
             <div class="blk-h"><span class="dot" style="background:var(--ink);"></span>复盘与收获</div>
-            <p>学到：「把个人困境抽象成通用工具」本身就是产品能力，也是我能讲清的方法论。若重来，会先做用户分层再写功能，而非先堆模块。</p>
+            <p>学到：系统深度比美术更能留住人，文字产品的关键是「让选择有意义」。若重来，会先做数值平衡表再写事件，并更早邀请非哲学背景者试玩验证「门槛够不够低」。</p>
           </div>
         </div>
       </div>
@@ -551,8 +571,8 @@
         <span class="sec-tt">关于我<span class="en">About</span></span>
       </div>
       <div class="about-in about">
-        <p>我是王梓睿，湖北大学哲学专业。比起停留在"想清楚"，我更在意<span class="hl">把想清楚的东西做出来</span>——这三个产品都从一个具体的人的困境出发，自己设计、自己写、自己上线。哲学训练给我拆解问题与讲清逻辑的底子，vibe coding 让我能把脑子里的东西快速变成现实。我相信好产品来自对一类人的真实理解，而不是套模板。</p>
-        <p class="about-2">我的工作方式：<span class="hl">自己负责产品定义、需求拆解与设计决策，用 AI 承担代码执行</span>，靠 vibe coding 把想法快速做成能用的东西。我对内容运营与用户增长尤其感兴趣——在三个项目里持续做用户访谈、反馈收集与内容校准，逐渐明确了「用用户反馈反推内容与产品优化」的运营抓手。</p>
+        <p>我是王梓睿，湖北大学哲学专业（2023–2027，2027 届），英语六级（CET-6）。比起停留在"想清楚"，我更在意<span class="hl">把想清楚的东西做出来</span>——这三个产品都从一个具体的人的困境出发，自己设计、自己写、自己上线。哲学训练给我拆解问题与讲清逻辑的底子，快速把想法做成可体验的原型让我能更快验证。我相信好产品来自对一类人的真实理解，而不是套模板。</p>
+        <p class="about-2">我的工作方式：<span class="hl">自己负责产品定义、需求拆解与设计决策，用 AI 承担代码执行</span>，靠把想法快速做成可体验的原型，验证更快。我对内容运营与用户增长尤其感兴趣——在三个项目里持续做用户访谈、反馈收集与内容校准，逐渐明确了「用用户反馈反推内容与产品优化」的运营方法（当前为个人作品的小范围验证，规模化运营待在真实岗位上实践）。</p>
         <div class="adv-grid">
           <div class="adv"><span class="adv-no">01</span><p><b>产品闭环：</b>独立完成 3 款 AI 产品从痛点洞察、需求验证、设计到上线开源、反馈迭代的完整闭环，最快 7 天出 MVP。</p></div>
           <div class="adv"><span class="adv-no">02</span><p><b>AI 原生：</b>用 DeepSeek / OpenCode / WorkBuddy / IMA 把想法快速做成可体验产品；哲学训练结构化思维与用户洞察，辩论队强化高压表达。</p></div>
@@ -580,7 +600,6 @@
         <div class="crow"><span class="k">手机</span><span class="v">13487095581</span></div>
         <div class="crow"><span class="k">GitHub</span><span class="v">github.com/wzr0910</span></div>
         <div class="crow"><span class="k">在线简历</span><span class="v"><a href="resume.html" target="_blank" rel="noopener">点击查看 ↗</a></span></div>
-        <div class="crow"><span class="k">作品集</span><span class="v">wzr0910.github.io</span></div>
       </div>
     </div>
   </section>
@@ -588,7 +607,7 @@
   <footer>
     <div class="wrap foot-in">
       <span class="blk"><span class="d" style="background:var(--red)"></span>© 2026 王梓睿 · 独立设计与开发</span>
-      <span class="blk"><span class="d" style="background:var(--blue)"></span>用 vibe coding 把想法做成能用的东西</span>
+      <span class="blk"><span class="d" style="background:var(--blue)"></span>独立把想法做成能用的东西</span>
     </div>
   </footer>
 
