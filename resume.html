@@ -39,11 +39,14 @@
   .item-h{font-weight:600;}
   .item-h .role{font-weight:400; color:var(--weak); font-size:12.5px; margin-left:6px;}
   .item-h .when{float:right; color:var(--weak); font-weight:400; font-size:12px;}
-  .ph{color:#9a2b2b; background:rgba(154,43,43,.07); padding:0 4px; border-radius:2px; font-style:normal;}
   .subs{margin:5px 0 2px; padding-left:2px;}
   .subs li{padding-left:16px; margin-bottom:4px; font-size:13px;}
   .subs li::before{content:"•"; color:var(--weak); left:2px;}
+  .adv{background:#faf8f4; border:1px solid var(--hair); border-left:3px solid #9a2b2b; padding:8px 12px; margin-bottom:8px; font-size:13px;}
+  .adv b{color:#9a2b2b;}
   .skills li{font-size:13px; margin-bottom:5px;}
+  .tags{margin-top:6px; display:flex; flex-wrap:wrap; gap:6px;}
+  .tags span{font-size:12px; border:1px solid var(--hair); padding:2px 9px; border-radius:2px;}
   .foot{margin-top:22px; font-size:11px; color:var(--weak); text-align:center;}
   @media print{
     body{background:#fff; padding:0; font-size:12.5px;}
@@ -58,12 +61,13 @@
   <div class="head">
     <div class="head-left">
       <div class="name">王梓睿</div>
-      <div class="intent">求职意向：产品 / 运营 / 策划 实习生</div>
+      <div class="intent">求职意向：AI 产品运营 / 内容运营</div>
       <div class="contact">
         <span><b>邮箱</b> 3304236052@qq.com</span>
         <span><b>手机</b> 13487095581</span>
         <span><b>GitHub</b> github.com/wzr0910</span>
         <span><b>作品集</b> wzr0910.github.io</span>
+        <span><b>英语</b> CET-6</span>
       </div>
     </div>
     <img class="photo" src="photo.jpg" alt="证件照" />
@@ -71,71 +75,82 @@
   <hr class="rule" />
 
   <div class="sec">
+    <div class="sec-h">个人优势</div>
+    <div class="adv"><b>产品闭环能力：</b>独立完成 3 款 AI 产品从用户痛点洞察、需求验证、产品设计到上线开源、反馈迭代的完整闭环，最快 7 天完成 MVP，具备真实的产品运营与内容运营实践经验。</div>
+    <div class="adv"><b>AI 原生工作方式：</b>熟练使用 DeepSeek、OpenCode、WorkBuddy、IMA 进行产品开发与内容生成，能快速将想法落地为可体验的产品；哲学背景训练结构化思维与用户洞察能力，辩论队经历强化了高压下的逻辑表达与快速反应。</div>
+    <div class="adv"><b>内容与用户意识：</b>在项目中持续进行用户访谈、小范围体验反馈收集与内容校准，关注用户完成路径与内容质量，具备从用户视角优化产品和内容的意识。</div>
+  </div>
+
+  <div class="sec">
     <div class="sec-h">教育背景</div>
     <div class="edu">
       <span class="school">湖北大学 · 哲学专业 本科</span>
       <span class="meta">2023.09 – 2027.06</span>
     </div>
+    <p style="margin-top:5px; font-size:13px; color:var(--weak);">主修逻辑学、批判性思维、美学、伦理学，系统训练逻辑分析、用户洞察与结构化写作能力，并应用于产品需求分析与内容策划。</p>
   </div>
 
   <div class="sec">
-    <div class="sec-h">项目经历 · 独立设计与端到端交付</div>
+    <div class="sec-h">项目经历 · 独立产品设计与运营</div>
     <ul>
       <li>
-        <div class="item-h">哲人王 · 网页文字治国游戏 <span class="role">独立创作者 / 产品设计</span><span class="when">2026.08 – 至今</span></div>
-        把抽象的哲思变成可体验的决策：玩家以哲人王身份处理治国事件，每一次抉择通过数值系统导向不同结局，在游玩中直观感受不同治理立场的差异。统筹 20+ 治国事件与 300+ 哲人台词，自主搭建选项、数值、结局的叙事系统，用结构化内容设计支撑多条故事线并行，以数值驱动多结局兼顾可玩性与复玩率。从概念、文案、系统到前端独立完成端到端交付，支持手机与电脑即点即玩。
+        <div class="item-h">PhilIntern · 文科生 AI 求职助手 <span class="role">独立产品负责人 / 从 0 到 1 设计与运营</span><span class="when">2026.07 – 至今</span></div>
+        <ul class="subs">
+          <li>用户洞察与定位：从自身求职痛点出发，访谈 5+ 文科同学验证需求普遍性，定位「文科生求职信息差」核心问题，设计岗位匹配、简历优化等 6 个工具模块，覆盖求职全流程。</li>
+          <li>产品落地与验证：用 DeepSeek + OpenCode 完成开发，7 天内上线 MVP 并 GitHub 开源；邀请数位目标用户小范围体验，据反馈完成功能与交互迭代，验证产品核心假设。</li>
+          <li>内容质量与流程优化：建立「AI 生成 + 人工校准」内容审核机制确保输出质量；基于用户使用路径优化关键转化流程，提升可用性与完成度。</li>
+        </ul>
       </li>
       <li>
-        <div class="item-h">孩子的游戏 · AI 哲学共读平台 <span class="role">独立创作者 / 产品设计</span><span class="when">2026.08 – 至今</span></div>
-        面向 22–28 岁对自我探索感兴趣的青年，设计一款 AI 共读 Web 应用，通过 3 轮对话引导用户共创人生宣言卡，解决传统心理测评工具同质化、缺乏深度对话的问题。
-        从自身与同专业同学的真实处境出发，梳理自我探索场景下的核心需求，完成产品定位、交互流程设计与前端开发，并部署至 GitHub Pages，实现端到端交付。
-        设计反测评差异化内容策略，以哲学文本为对话素材，提升内容调性与用户共鸣；已上线支持手机与电脑即点即玩，用户可将宣言卡保存为图片自行分享。
-        根据用户试用反馈持续迭代，优化对话引导逻辑。
+        <div class="item-h">孩子的游戏 · AI 哲学共读平台 <span class="role">独立创作者 / 内容设计与用户运营</span><span class="when">2026.08 – 至今</span></div>
+        <ul class="subs">
+          <li>内容策划与差异化：洞察哲学经典入门门槛高的痛点，定位「反测评」内容方向，设计 3 轮引导式 AI 对话 + 人生宣言卡生成功能，面向 22–28 岁自我探索青年群体。</li>
+          <li>内容生产与质量把控：用 AI 生成对话初稿，人工校准尼采人设与语言风格确保一致性；邀请数位目标用户小范围体验，收集交互反馈，完成 2 轮对话流程迭代。</li>
+          <li>用户反馈与体验优化：据测试反馈优化对话节奏与内容呈现，关注用户完成率与停留时长，验证内容吸引力与完成意愿。</li>
+        </ul>
       </li>
       <li>
-        <div class="item-h">PhilIntern · 哲学实习助手 <span class="role">独立创作者</span><span class="when">2026.07 – 至今</span></div>
-        针对哲学与文科生实习信息分散、岗位匹配度低的问题，从自身与同专业同学的真实困境出发，梳理核心痛点。
-        基于需求拆解设计功能模块，涵盖信息聚合、岗位匹配与案例展示；输出可复用案例页，按痛点、需求、模块、迭代、复盘的结构呈现，展示产品与运营的思考路径。
-        已在 GitHub 开源（<a href="https://github.com/wzr0910/hub">github.com/wzr0910/hub</a>），持续根据同学试用反馈迭代，验证产品核心假设。
+        <div class="item-h">哲人王 · 网页文字治国游戏 <span class="role">独立创作者 / 产品设计与体验优化</span><span class="when">2026.08 – 至今</span></div>
+        <ul class="subs">
+          <li>内容体系搭建：基于「哲学家当统治者」概念，独立设计 20+ 治国事件、300+ 台词分支的多结局数值驱动游戏，构建完整内容体系与数值平衡系统，10 天内完成从设计到上线。</li>
+          <li>问题定位与解决：测试中发现网站加载超时，独立排查定位资源文件过大根因，通过压缩与加载策略优化解决，改善用户体验。</li>
+          <li>内容校准与迭代：据用户反馈优化叙事节奏与角色台词一致性，筛选并修正 OOC 段落，提升内容质量与可复玩性。</li>
+        </ul>
       </li>
     </ul>
   </div>
 
   <div class="sec">
-    <div class="sec-h">实践 / 实习经历</div>
+    <div class="sec-h">实践经历</div>
     <ul>
       <li>
         <div class="item-h">民革机关办公室 <span class="role">实习生</span><span class="when">2026.05 – 2026.07</span></div>
-        负责 2000+ 成员信息录入专项的任务拆解与进度管理，制定任务分配 SOP，协调多人协作，推动全员信息按期入库。
-        收集一线录入问题并分类汇总，形成问题处理文档，向上汇报并推动解决。
-        使用 Excel 进行数据清洗与交叉核对，保障数据质量，并旁听 2–3 场大型会议的组织协调，跟进学习公文写作规范与排版。
+        <ul class="subs">
+          <li>负责 2000+ 党员信息录入与数据治理专项，发现 200+ 条信息缺失后主动跨部门对接组织部，数据交叉核对与补全，最终数据准确率 100%，按期完成入库。</li>
+          <li>制定信息录入 SOP，协调多人协作；用 Excel 进行数据清洗、去重与质量管控，整理问题处理文档形成可复用流程，提升团队整体效率。</li>
+        </ul>
       </li>
       <li>
-        <div class="item-h">湖北大学思明书院 <span class="role">行政事务部成员</span><span class="when">2023.10 – 2024.06</span></div>
-        在文科多院联合的书院制组织中承担信息枢纽与内容运营，积累跨部门协作与基础运营经验。
-        担任各班班干部与辅导员之间的信息桥梁，协助通知指令下达与材料收集，保障书院事务流转顺畅。
-        参与运营书院宣传账号，统筹活动宣传发布，并与多部门协作推进事务。
-      </li>
-      <li>
-        <div class="item-h">辩论队 <span class="role">队员</span><span class="when">2023.10 – 至今</span></div>
-        在湖北日报传媒集团"追寻身边的星"活动中，负责资料检索与立论框架搭建，作为主辩与道德模范模拟辩论，活动获楚天都市报、澎湃新闻等媒体报道。
-        系统参与备赛全流程，包括检索辩题资料、集中讨论确立核心立论、模拟对方观点预演反驳，锻炼研究与逻辑表达能力。
-        作为学院与书院双队成员，参与队内训练与赛事讨论，具备团队协作备赛经验。
+        <div class="item-h">院辩论队 <span class="role">队员</span><span class="when">2023.10 – 至今</span></div>
+        <ul class="subs">
+          <li>湖北日报「追寻身边的星」活动主辩，负责立论框架搭建与资料检索，活动获楚天都市报、澎湃新闻等多家媒体报道。</li>
+          <li>系统参与备赛全流程，锻炼逻辑表达、快速学习与团队协作能力，能在高压环境下清晰思考并结构化输出观点。</li>
+        </ul>
       </li>
     </ul>
   </div>
 
   <div class="sec">
-    <div class="sec-h">能力与特质</div>
+    <div class="sec-h">技能标签</div>
     <ul class="skills">
-      <li>产品设计：用户研究与需求拆解、产品流程设计、PRD 撰写</li>
-      <li>AI 应用：AI 对话产品设计、Prompt 设计与分步引导、AI 伦理判断</li>
-      <li>开发部署：React、Next.js、GitHub Pages、HTML、CSS，可独立部署个人项目</li>
-      <li>数据分析：Excel 数据清洗、交叉核对、基础数据可视化</li>
-      <li>内容能力：公文写作、活动宣传、内容调性把控</li>
-      <li>核心特质：哲学结构化思考、端到端交付、用户洞察、快速学习</li>
+      <li>产品与运营：需求分析、用户调研、用户反馈分析、内容策划、产品迭代、运营策略制定</li>
+      <li>AI 与内容工具：DeepSeek、OpenCode、WorkBuddy、IMA、Prompt Engineering、AI 内容生成与人工校准</li>
+      <li>数据与协作：Excel 数据清洗与交叉核对、基础数据可视化、GitHub、Markdown</li>
+      <li>个人特质：逻辑思维强、自驱力、快速学习、跨部门沟通协作、目标导向、抗压能力好</li>
     </ul>
   </div>
+
+  <div class="foot">本简历与作品集（wzr0910.github.io）配套 · 最近更新 2026.08</div>
 
 </div>
 </body>
