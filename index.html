@@ -148,6 +148,22 @@
   .deep .note{font-size:12.5px;font-weight:700;color:var(--blue);border-left:4px solid var(--blue);padding:4px 0 4px 10px;margin:10px 0 0;line-height:1.5;}
   .deep .honest{background:var(--yellow);border:3px solid var(--ink);padding:16px 20px;box-shadow:8px 8px 0 var(--ink);font-size:13.5px;line-height:1.7;margin-bottom:30px;}
   .deep .honest b{font-weight:900;}
+  /* 速览卡 + CTA */
+  .deep .overview{border:3px solid var(--ink);background:var(--paper);padding:18px 20px;margin-bottom:22px;box-shadow:6px 6px 0 var(--ink);}
+  .deep .overview .ov-top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:baseline;}
+  .deep .overview .ov-pos{font-size:15px;font-weight:900;line-height:1.5;flex:1;min-width:240px;}
+  .deep .overview .ov-role{font-size:12.5px;font-weight:800;color:#555;white-space:nowrap;}
+  .deep .overview .ov-res{font-size:13px;font-weight:800;color:var(--blue);margin:10px 0 12px;line-height:1.5;}
+  .deep .overview .ov-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+  .deep .overview .ov-tags span{font-size:11px;font-weight:800;border:2px solid var(--ink);padding:2px 9px;background:#fff;}
+  .deep .cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+  .deep .cta{display:inline-flex;align-items:center;gap:8px;font-weight:900;font-size:13px;text-decoration:none;border:3px solid var(--ink);padding:9px 15px;box-shadow:4px 4px 0 var(--ink);transition:transform .15s ease,box-shadow .15s ease;}
+  .deep .cta:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink);}
+  .deep .cta.r{background:var(--red);color:#fff;}
+  .deep .cta.b{background:var(--blue);color:#fff;}
+  .deep .cta.y{background:var(--yellow);color:var(--ink);}
+  .deep .cta .ar{width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:10px solid currentColor;}
+  .deep .method{font-size:12.5px;font-weight:800;color:#555;background:#FAFAFA;border:2px solid var(--ink);padding:6px 10px;margin-bottom:10px;line-height:1.5;}
   @media(max-width:880px){
     .deep .case-h .t{font-size:18px;}
     .hero-in{grid-template-columns:1fr;gap:36px;}
@@ -229,7 +245,7 @@
           </div>
           <div class="card-body">
             <div class="ttl">PhilIntern</div>
-            <div class="sub">哲学实习助手</div>
+            <div class="sub">文科生 AI 求职助手</div>
             <p class="desc">面向哲学与文科生的职业辅助工具。主导从用户研究、需求拆解、模块设计到迭代复盘的完整流程。</p>
             <p class="result">已在 GitHub 开源，根据同学试用反馈持续迭代</p>
             <div class="chips"><span>用户研究</span><span>需求拆解</span><span>0 到 1 交付</span><span>复盘迭代</span></div>
@@ -290,23 +306,36 @@
           <span class="no" style="background:var(--red);">01</span>
           <div><div class="t">哲人王 · 网页文字治国游戏</div><div class="s">旗舰项 · 产品设计 与 独立开发</div></div>
         </div>
+        <div class="overview">
+          <div>
+            <div class="ov-top">
+              <span class="ov-pos">将哲学治理命题做成多结局、数值驱动的文字决策游戏，让玩家在体验中理解不同治理取向的代价。</span>
+              <span class="ov-role">角色：独立产品设计 + 开发</span>
+            </div>
+            <div class="ov-res">核心成果：20+ 治国事件、300+ 台词分支、10 天从设计到上线；独立排查并修复加载超时。</div>
+            <div class="ov-tags"><span>游戏叙事</span><span>数值系统</span><span>系统设计</span><span>前端交付</span></div>
+          </div>
+          <div class="cta-row">
+            <a class="cta r" href="https://wzr0910.github.io/philosopher-king" target="_blank" rel="noopener">在线体验 <span class="ar"></span></a>
+          </div>
+        </div>
         <div class="case-b">
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--red);"></span>背景与问题定义</div>
-            <p>哲学内容对年轻人常常是「看得懂但没参与感」：读得进句子，却很难真的去判断。我想把治理命题做成一种可体验的决策，让玩家以哲人王身份处理治国事件，每个选择都带来数值后果，从而用身体理解不同治理取向的代价。要解决的痛点，是哲学传播停留在文本、离年轻人太远。基于「哲学家当统治者」这一概念，我决定做一款多结局、数值驱动的文字治国游戏。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--red);"></span>背景与问题</div>
+            <p>哲学传播长期停留在文本，年轻人「读得进句子、难有参与感」。我把治理命题转化为可交互的决策：玩家以哲人王身份处理治国事件，每个选择触发数值后果，用身体（而非说教）理解不同治理取向的代价。基于「哲学家当统治者」这一概念，做一款多结局、数值驱动的文字治国游戏。</p>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--yellow);"></span>用户洞察 · 内测验证</div>
-            <p>目标用户：喜欢思辨与策略的年轻玩家，22 到 28 岁，文科或游戏兴趣背景。验证方式：我自己就是目标用户，再请亲友试玩收集口述反馈。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--yellow);"></span>用户洞察与验证</div>
+            <p class="method">调研方式：自身作为目标用户 + 亲友试玩（5+ 人）；反馈为口述方向性总结。</p>
             <ul>
-              <li>「选项的后果看不太清，希望数值变化更直观」——推动我把数值维度拆得更细。</li>
-              <li>「想看不同结局，但不想重开太多次」——推动我做结局分支提示。</li>
-              <li>「文字量可以再少一点」——推动事件文案更短、更有张力。</li>
+              <li>「选项后果看不清」→ 推动数值维度拆得更细、变化更直观。</li>
+              <li>「想看不同结局但不想重开」→ 推动加结局分支提示。</li>
+              <li>「文字量可再少」→ 推动事件文案更短、更有张力。</li>
             </ul>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--blue);"></span>产品设计文档</div>
-            <p>核心系统：选项 到 数值变化 到 结局判定。我独立设计了 <b>20+ 治国事件、300+ 哲人台词分支</b>，并搭建「选项-数值-结局」叙事系统与数值平衡系统，10 天内完成从设计到上线。下图是单事件的处理流程。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--blue);"></span>产品设计</div>
+            <p>核心系统：选项 → 数值变化 → 结局判定。我独立设计 <b>20+ 治国事件、300+ 哲人台词分支</b>，搭建「选项-数值-结局」叙事系统与数值平衡系统，10 天内从设计到上线。模块划分：事件库 / 数值引擎 / 结局判定 / 台词库；原型先用纸面事件卡跑通逻辑，再做前端实现。单事件处理流程：</p>
             <svg class="flow" viewBox="0 0 560 130" role="img" aria-label="哲人王单事件处理流程">
               <rect x="8" y="40" width="118" height="50" fill="#fff" stroke="#212121" stroke-width="3"/>
               <text x="67" y="70" font-size="14" font-weight="900" text-anchor="middle" fill="#212121">治国事件</text>
@@ -326,12 +355,12 @@
             <p>模块划分：事件库 / 数值引擎 / 结局判定 / 台词库。原型先用纸面事件卡跑通逻辑，再做前端实现。</p>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--red);"></span>迭代与打磨</div>
-            <p>工程侧：测试中发现网站加载超时，我独立排查定位到<b>资源文件过大</b>的根因，通过压缩资源与调整加载策略解决，体验明显变快。体验侧：让数值维度（民心 / 国库 / 声望）的变化更直观、不同结局更可被感知；事件文案持续往「更短、更有张力」改。下一步计划：补一张数值平衡表，避免某一维度过早锁死结局；并邀请非哲学背景的人试玩，验证门槛是否够低。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--red);"></span>迭代与优化</div>
+            <p>工程侧：测试中发现加载超时，独立排查定位到<b>资源文件过大</b>的根因，通过压缩资源与调整加载策略解决，体验明显变快。体验侧：数值维度变化更直观、结局更可感知，事件文案持续往「更短、更有张力」改。未来方向：补数值平衡表避免维度过早锁死，并邀请非哲学背景用户验证门槛。</p>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--ink);"></span>复盘总结</div>
-            <p>学到：系统深度比美术更能留住人，文字产品的关键是「让选择有意义」。如果重来，我会先做数值平衡表再写事件，而不是反过来；也会更早邀请非哲学背景的人试玩，验证「门槛够不够低」。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--ink);"></span>复盘与收获</div>
+            <p>学到：系统深度比美术更能留住人，文字产品的关键是「让选择有意义」。若重来，会先做数值平衡表再写事件，并更早邀请非哲学背景者试玩验证「门槛够不够低」。</p>
           </div>
         </div>
       </div>
@@ -341,23 +370,36 @@
           <span class="no" style="background:var(--yellow);">02</span>
           <div><div class="t">孩子的游戏 · AI 哲学共读平台</div><div class="s">AI 主线项 · 产品设计 与 前端</div></div>
         </div>
+        <div class="overview">
+          <div>
+            <div class="ov-top">
+              <span class="ov-pos">用 3 轮 AI 对话把意义探索做成可共创、可分享的「人生宣言卡」，替代同质化心理测评。</span>
+              <span class="ov-role">角色：独立创作者（内容设计 + 用户运营）</span>
+            </div>
+            <div class="ov-res">核心成果：3 轮引导式对话 + 宣言卡分享机制；2 轮迭代；尼采人设人工校准。</div>
+            <div class="ov-tags"><span>AI 内容</span><span>对话设计</span><span>用户运营</span><span>人工校准</span></div>
+          </div>
+          <div class="cta-row">
+            <a class="cta y" href="https://wzr0910.github.io/child-game" target="_blank" rel="noopener">在线体验 <span class="ar"></span></a>
+          </div>
+        </div>
         <div class="case-b">
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--yellow);"></span>背景与问题定义</div>
-            <p>22 到 28 岁的年轻人常有「想理清自己」的需求，但传统心理测评像考试、缺深度对话，填完只有标签没有共鸣。我定位「反测评」内容方向，用 AI 对话做成「被听懂」的体验：<b>3 轮引导式 AI 对话</b>引导用户共创一张人生宣言卡，把意义探索变成可分享的产物。痛点：测评同质化、缺真实对话感、哲学经典入门门槛高。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--yellow);"></span>背景与问题</div>
+            <p>22–28 岁年轻人常有「想理清自己」的需求，但传统心理测评像考试、填完只有标签没有共鸣。我把意义探索做成可共创、可分享的体验：用 <b>3 轮引导式 AI 对话</b> 引导用户生成一张人生宣言卡，替代同质化测评。痛点：测评缺真实对话感、哲学经典入门门槛高。</p>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--blue);"></span>用户洞察 · 内测验证</div>
-            <p>目标用户：想理清自己、但抗拒填表的年轻人。验证方式：自身经历 + 社媒（小红书 / 播客）观察 + 亲友内测。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--blue);"></span>用户洞察与验证</div>
+            <p class="method">调研方式：自身经历 + 社媒（小红书 / 播客）观察 + 亲友内测（3+ 人）。</p>
             <ul>
-              <li>「比填表舒服，像有人陪我想」——验证了「对话式」方向。</li>
-              <li>「希望中间能多追问我一句」——推动我在第 2 轮加深挖追问。</li>
-              <li>「宣言卡想发给朋友看」——推动我做保存与分享。</li>
+              <li>「比填表舒服，像有人陪我想」→ 验证「对话式」方向可行。</li>
+              <li>「希望中间多追问我一句」→ 推动第 2 轮加深挖追问。</li>
+              <li>「宣言卡想发给朋友看」→ 推动做保存与分享。</li>
             </ul>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--red);"></span>产品设计文档</div>
-            <p>3 轮对话流程：破冰 到 深挖 到 产出。反测评内容策略：不评分、只共创；用宣言卡机制把抽象的意义危机做成可分享产物。内容生产上，用 AI 生成对话初稿，再人工校准尼采人设与语言风格，确保一致性。下图是体验主流程。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--red);"></span>产品设计</div>
+            <p>3 轮对话流程：破冰 → 深挖 → 产出。反测评策略：不评分、只共创；用宣言卡把抽象的意义危机做成可分享产物。内容上用 AI 生成对话初稿，再人工校准尼采人设与语言风格，确保一致性。体验主流程：</p>
             <svg class="flow" viewBox="0 0 560 120" role="img" aria-label="孩子的游戏对话主流程">
               <rect x="6" y="38" width="88" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
               <text x="50" y="58" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">第1轮</text>
@@ -379,15 +421,15 @@
               <polygon points="318,61 338,61 338,53 330,61 338,69 338,61" fill="#212121"/>
               <polygon points="430,61 450,61 450,53 442,61 450,69 450,61" fill="#212121"/>
             </svg>
-            <p>原型先用纸面对话脚本跑通三轮节奏，再接 AI 实现；分享机制用图片导出，降低传播门槛。</p>
+            <p>原型先用纸面对话脚本跑通三轮节奏，再接 AI 实现；分享用图片导出降低传播门槛。</p>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--yellow);"></span>迭代与打磨</div>
-            <p>据目标用户小范围体验的反馈，<b>完成 2 轮对话流程迭代</b>：从「问答式」改为「3 轮共创式」，并在第 2 轮加入深挖追问；据测试反馈优化对话节奏与内容呈现，关注用户完成率与停留时长。下一步计划：加对话分支防跑题、加「再来一次换一张」降低试错成本。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--yellow);"></span>迭代与优化</div>
+            <p>据小范围体验反馈，<b>完成 2 轮对话流程迭代</b>：从「问答式」改为「3 轮共创式」，第 2 轮加入深挖追问；并据测试反馈优化对话节奏与内容呈现，关注完成率与停留时长。未来方向：加对话分支防跑题、加「再来一次换一张」降低试错成本。</p>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--ink);"></span>复盘总结</div>
-            <p>学到：AI 产品的核心是「引导结构」而不是模型本身，流程设计决定体验上限。如果重来，我会先画对话分支树，再写文案，而不是反过来。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--ink);"></span>复盘与收获</div>
+            <p>学到：AI 产品的核心是「引导结构」而非模型本身，流程设计决定体验上限。若重来，会先画对话分支树再写文案，而非反过来。</p>
           </div>
         </div>
       </div>
@@ -395,25 +437,39 @@
       <div class="case">
         <div class="case-h">
           <span class="no" style="background:var(--blue);">03</span>
-          <div><div class="t">PhilIntern · 哲学实习助手</div><div class="s">研究证据项 · 产品设计 与 开源</div></div>
+          <div><div class="t">PhilIntern · 文科生 AI 求职助手</div><div class="s">研究证据项 · 产品设计 与 开源</div></div>
+        </div>
+        <div class="overview">
+          <div>
+            <div class="ov-top">
+              <span class="ov-pos">把文科生求职的信息差，做成「痛点 → 方案」讲清的 AI 工具集，覆盖求职全流程。</span>
+              <span class="ov-role">角色：独立产品负责人（0→1 设计与运营）</span>
+            </div>
+            <div class="ov-res">核心成果：6 个工具模块、7 天出 MVP、GitHub 开源；建立「AI 生成 + 人工校准」内容机制。</div>
+            <div class="ov-tags"><span>用户研究</span><span>需求拆解</span><span>AI 产品</span><span>开源运营</span></div>
+          </div>
+          <div class="cta-row">
+            <a class="cta b" href="https://wzr0910.github.io/hub" target="_blank" rel="noopener">在线体验 <span class="ar"></span></a>
+            <a class="cta y" href="https://github.com/wzr0910/hub" target="_blank" rel="noopener">GitHub <span class="ar"></span></a>
+          </div>
         </div>
         <div class="case-b">
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--blue);"></span>背景与问题定义</div>
-            <p>哲学与文科生找实习时，信息分散、不知道投什么、怎么准备，缺一个把「痛点 到 方案」讲清的抓手。我做信息聚合 + 岗位匹配 + 案例展示，帮同类同学把求职想清楚。痛点：实习信息散、匹配度低。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--blue);"></span>背景与问题</div>
+            <p>哲学与文科生找实习时，信息分散、不知投什么、不会准备，缺一个把「痛点 → 方案」讲清的抓手。我把自身困境抽象成通用工具：信息聚合 + 岗位匹配 + 案例展示，帮同类同学把求职想清楚。核心痛点：实习信息散、匹配度低、表达无抓手。</p>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--red);"></span>用户洞察 · 诚实标注</div>
-            <p>目标用户：哲学 / 文科实习生。验证方式：自身求职痛点 + <b>5+ 位文科同学轻量访谈</b> + 数位目标用户内测。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--red);"></span>用户洞察与验证</div>
+            <p class="method">调研方式：自身求职痛点 + <b>5+ 位文科同学轻量访谈</b> + 数位目标用户内测。</p>
             <ul>
-              <li>「想要能直接抄的简历结构」——推动我做多岗位简历生成器。</li>
-              <li>「想知道这个岗到底要什么能力」——推动我做岗位匹配度分析。</li>
-              <li>「匹配度想看得分理由，不想只看分数」——推动我在结果里写理由。</li>
+              <li>「想要能直接抄的简历结构」→ 推动多岗位简历生成器。</li>
+              <li>「想知道这个岗到底要什么能力」→ 推动岗位匹配度分析。</li>
+              <li>「匹配度想看得分理由，不想只看分数」→ 推动结果里写理由。</li>
             </ul>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--yellow);"></span>产品设计文档</div>
-            <p>我用 DeepSeek + OpenCode 开发，7 天内上线 MVP 并 GitHub 开源。功能模块覆盖求职全流程：潜力挖掘器 / 多岗位简历生成器 / HR 沟通助手 / 岗位匹配度分析 / 能力速成清单 等 <b>6 个工具模块</b>。建立「AI 生成 + 人工校准」内容审核机制确保输出质量。案例页结构：痛点 到 需求 到 模块 到 迭代 到 复盘，做成可复用方法论。下图是工具链路（覆盖求职全流程）：</p>
+            <div class="blk-h"><span class="dot" style="background:var(--yellow);"></span>产品设计</div>
+            <p>用 DeepSeek + OpenCode 开发，7 天内上线 MVP 并 GitHub 开源。功能模块覆盖求职全流程：潜力挖掘器 / 多岗位简历生成器 / HR 沟通助手 / 岗位匹配度分析 / 能力速成清单 等 <b>6 个工具模块</b>。建立「AI 生成 + 人工校准」内容审核机制确保输出质量。案例页结构：痛点 → 需求 → 模块 → 迭代 → 复盘，沉淀为可复用方法论。工具链路（覆盖求职全流程）：</p>
             <svg class="flow" viewBox="0 0 560 120" role="img" aria-label="PhilIntern 工具链路">
               <rect x="6" y="38" width="88" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
               <text x="50" y="58" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">输入画像</text>
@@ -436,12 +492,12 @@
             <p>6 个模块全部经「AI 生成 + 人工校准」审核后开源在 GitHub，便于同学复用到自己的求职。</p>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--blue);"></span>迭代与打磨</div>
-            <p>从信息聚合 到 加匹配度分析 到 加可复用案例结构。下一步计划：做用户分层（按年级 / 专业），让建议更准；并补「投递后怎么跟进」的模块。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--blue);"></span>迭代与优化</div>
+            <p>从信息聚合 → 加匹配度分析 → 加可复用案例结构。未来方向：做用户分层（按年级 / 专业）让建议更准；补「投递后怎么跟进」模块。</p>
           </div>
           <div class="blk">
-            <div class="blk-h"><span class="dot" style="background:var(--ink);"></span>复盘总结</div>
-            <p>学到：「把个人困境抽象成通用工具」本身就是产品能力，也是我能讲清的方法论。如果重来，我会先做用户分层再写功能，而不是先堆模块。</p>
+            <div class="blk-h"><span class="dot" style="background:var(--ink);"></span>复盘与收获</div>
+            <p>学到：「把个人困境抽象成通用工具」本身就是产品能力，也是我能讲清的方法论。若重来，会先做用户分层再写功能，而非先堆模块。</p>
           </div>
         </div>
       </div>
