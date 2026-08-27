@@ -38,9 +38,8 @@
   .mark .sq{position:absolute;inset:0;background:var(--blue);}
   .mark .ci{position:absolute;width:18px;height:18px;border-radius:50%;background:var(--red);right:-4px;bottom:-4px;border:2px solid var(--paper);}
   .brand-name{font-family:"Jost","Noto Sans SC",sans-serif;}
-  .links{display:flex;gap:0;}
-  .links a{padding:6px 14px;font-weight:700;font-size:14px;border-left:2px solid var(--ink);position:relative;}
-  .links a:first-child{border-left:none;}
+  .links{display:flex;gap:6px;}
+  .links a{padding:9px 18px;font-weight:700;font-size:14px;position:relative;}
   .links a:hover{background:var(--yellow);}
 
   /* ===== HERO ===== */
@@ -89,10 +88,15 @@
   .go .ar{width:0;height:0;border-top:8px solid transparent;border-bottom:8px solid transparent;border-left:12px solid var(--ink);}
 
   /* ===== CAPS ===== */
-  .grid-caps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-  .cap{background:#fff;border:3px solid var(--ink);padding:22px 20px;position:relative;box-shadow:8px 8px 0 var(--ink);}
+  .grid-caps{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .cap{background:#fff;border:3px solid var(--ink);border-top-width:7px;padding:22px 20px;position:relative;box-shadow:8px 8px 0 var(--ink);}
   .cap:hover{transform:translate(-3px,-3px);box-shadow:12px 12px 0 var(--ink);}
-  .cap .ic{width:48px;height:48px;margin-bottom:14px;}
+  .cap:nth-child(1){border-top-color:var(--blue);}
+  .cap:nth-child(2){border-top-color:var(--yellow);}
+  .cap:nth-child(3){border-top-color:var(--red);}
+  .cap:nth-child(4){border-top-color:var(--red);}
+  .cap:nth-child(5){border-top-color:var(--blue);}
+  .cap:nth-child(6){border-top-color:var(--yellow);}
   .cap h4{font-size:17px;font-weight:900;margin-bottom:10px;}
   .cap ul{list-style:none;margin-top:2px;}
   .cap li{position:relative;padding-left:18px;font-size:13px;color:#333;margin-bottom:10px;line-height:1.5;}
@@ -197,7 +201,6 @@
         <p class="role-line">哲学背景的<b>产品创作者</b></p>
         <p class="lead">我把哲学训练变成能上手的数字产品。这里收录三个从 0 到 1 独立完成的项目，以及它们背后的思考。比起空谈方法，我更相信把想法做成能用的东西。</p>
         <p class="intent">求职意向 · AI 产品运营 / 内容运营</p>
-        <p class="edu">湖北大学 · 哲学专业 · 2023–2027（2027 届）· 英语六级 CET-6</p>
         <div class="tags">
           <span class="tag r">产品思维</span>
           <span class="tag y">内容设计</span>
@@ -323,10 +326,6 @@
         </div>
         <div class="deep-link">
           <span class="dl-pos">把文科生求职的信息差，做成「痛点 → 方案」讲清的 AI 工具集，覆盖求职全流程。</span>
-          <div class="cta-row">
-            <a class="cta b" href="https://wzr0910.github.io/hub" target="_blank" rel="noopener">在线体验 <span class="ar"></span></a>
-            <a class="cta y" href="https://github.com/wzr0910/hub" target="_blank" rel="noopener">GitHub <span class="ar"></span></a>
-          </div>
         </div>
         <div class="case-b">
           <div class="blk">
@@ -385,9 +384,6 @@
         </div>
         <div class="deep-link">
           <span class="dl-pos">用 3 轮 AI 对话把意义探索做成可共创、可分享的「人生宣言卡」，替代同质化心理测评。</span>
-          <div class="cta-row">
-            <a class="cta y" href="https://wzr0910.github.io/child-game" target="_blank" rel="noopener">在线体验 <span class="ar"></span></a>
-          </div>
         </div>
         <div class="case-b">
           <div class="blk">
@@ -446,9 +442,6 @@
         </div>
         <div class="deep-link">
           <span class="dl-pos">将哲学治理命题做成多结局、数值驱动的文字决策游戏，让玩家在体验中理解不同治理取向的代价。</span>
-          <div class="cta-row">
-            <a class="cta r" href="https://wzr0910.github.io/philosopher-king" target="_blank" rel="noopener">在线体验 <span class="ar"></span></a>
-          </div>
         </div>
         <div class="case-b">
           <div class="blk">
@@ -507,7 +500,6 @@
       </div>
       <div class="grid-caps">
         <div class="cap">
-          <svg class="ic" viewBox="0 0 48 48"><rect x="4" y="4" width="40" height="40" fill="#1E88E5"/></svg>
           <span class="idx jost">①</span>
           <h4>用户研究与需求拆解</h4>
           <ul>
@@ -516,7 +508,6 @@
           </ul>
         </div>
         <div class="cap">
-          <svg class="ic" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="#FDD835"/></svg>
           <span class="idx jost">②</span>
           <h4>产品与内容设计</h4>
           <ul>
@@ -525,7 +516,6 @@
           </ul>
         </div>
         <div class="cap">
-          <svg class="ic" viewBox="0 0 48 48"><polygon points="24,4 44,44 4,44" fill="#E53935"/></svg>
           <span class="idx jost">③</span>
           <h4>游戏叙事与系统设计</h4>
           <ul>
@@ -534,7 +524,6 @@
           </ul>
         </div>
         <div class="cap">
-          <svg class="ic" viewBox="0 0 48 48"><rect x="6" y="6" width="16" height="16" fill="#E53935"/><rect x="26" y="6" width="16" height="16" fill="#1E88E5"/><rect x="6" y="26" width="16" height="16" fill="#FDD835"/><rect x="26" y="26" width="16" height="16" fill="#212121"/></svg>
           <span class="idx jost">④</span>
           <h4>端到端交付</h4>
           <ul>
@@ -543,7 +532,6 @@
           </ul>
         </div>
         <div class="cap">
-          <svg class="ic" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="#212121"/><circle cx="24" cy="24" r="9" fill="#FAFAFA"/></svg>
           <span class="idx jost">⑤</span>
           <h4>结构化思考</h4>
           <ul>
@@ -552,7 +540,6 @@
           </ul>
         </div>
         <div class="cap">
-          <svg class="ic" viewBox="0 0 48 48"><polygon points="24,4 44,44 4,44" fill="#1E88E5"/><circle cx="24" cy="30" r="8" fill="#FDD835"/></svg>
           <span class="idx jost">⑥</span>
           <h4>协作与表达</h4>
           <ul>
@@ -571,7 +558,7 @@
         <span class="sec-tt">关于我<span class="en">About</span></span>
       </div>
       <div class="about-in about">
-        <p>我是王梓睿，湖北大学哲学专业（2023–2027，2027 届），英语六级（CET-6）。比起停留在"想清楚"，我更在意<span class="hl">把想清楚的东西做出来</span>——这三个产品都从一个具体的人的困境出发，自己设计、自己写、自己上线。哲学训练给我拆解问题与讲清逻辑的底子，快速把想法做成可体验的原型让我能更快验证。我相信好产品来自对一类人的真实理解，而不是套模板。</p>
+        <p>我是王梓睿。比起停留在"想清楚"，我更在意<span class="hl">把想清楚的东西做出来</span>——这三个产品都从一个具体的人的困境出发，自己设计、自己写、自己上线。哲学训练给我拆解问题与讲清逻辑的底子，快速把想法做成可体验的原型让我能更快验证。我相信好产品来自对一类人的真实理解，而不是套模板。</p>
         <p class="about-2">我的工作方式：<span class="hl">自己负责产品定义、需求拆解与设计决策，用 AI 承担代码执行</span>，靠把想法快速做成可体验的原型，验证更快。我对内容运营与用户增长尤其感兴趣——在三个项目里持续做用户访谈、反馈收集与内容校准，逐渐明确了「用用户反馈反推内容与产品优化」的运营方法（当前为个人作品的小范围验证，规模化运营待在真实岗位上实践）。</p>
         <div class="adv-grid">
           <div class="adv"><span class="adv-no">01</span><p><b>产品闭环：</b>独立完成 3 款 AI 产品从痛点洞察、需求验证、设计到上线开源、反馈迭代的完整闭环，最快 7 天出 MVP。</p></div>
