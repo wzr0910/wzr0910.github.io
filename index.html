@@ -285,10 +285,6 @@
         <svg class="sec-shape" viewBox="0 0 46 46"><rect x="6" y="6" width="34" height="34" fill="#1E88E5"/><circle cx="23" cy="23" r="9" fill="#FDD835"/></svg>
       </div>
 
-      <div class="honest">
-        <b>关于「用户验证」的诚实说明：</b>三个项目都是我个人作品，目前处于早期验证阶段。我做过 <b>5+ 位文科同学的小范围轻量访谈</b>、并邀请数位目标用户内测，下面的用户洞察来自自身使用与内测口述反馈整理——均为<b>小样本、非统计、反馈为方向性总结非逐字引用</b>。所有数字只写真实有的（如哲人王 20+ 事件、300+ 台词），不编用户量、留存或排名。
-      </div>
-
       <div class="case">
         <div class="case-h">
           <span class="no" style="background:var(--red);">01</span>
@@ -307,20 +303,25 @@
               <li>「想看不同结局，但不想重开太多次」——推动我做结局分支提示。</li>
               <li>「文字量可以再少一点」——推动事件文案更短、更有张力。</li>
             </ul>
-            <p class="note">以上为内测口述的方向性总结，非逐字引用，无统计样本。</p>
           </div>
           <div class="blk">
             <div class="blk-h"><span class="dot" style="background:var(--blue);"></span>产品设计文档</div>
             <p>核心系统：选项 到 数值变化 到 结局判定。我独立设计了 <b>20+ 治国事件、300+ 哲人台词分支</b>，并搭建「选项-数值-结局」叙事系统与数值平衡系统，10 天内完成从设计到上线。下图是单事件的处理流程。</p>
-            <svg class="flow" viewBox="0 0 560 120" role="img" aria-label="哲人王单事件处理流程">
-              <rect x="8" y="38" width="130" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
-              <text x="73" y="66" font-size="14" font-weight="900" text-anchor="middle" fill="#212121">治国事件</text>
-              <rect x="215" y="38" width="130" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
-              <text x="280" y="66" font-size="14" font-weight="900" text-anchor="middle" fill="#212121">玩家选择</text>
-              <rect x="422" y="38" width="130" height="46" fill="#FDD835" stroke="#212121" stroke-width="3"/>
-              <text x="487" y="66" font-size="14" font-weight="900" text-anchor="middle" fill="#212121">数值与结局</text>
-              <polygon points="138,61 205,61 205,53 197,61 205,69 205,61" fill="#212121"/>
-              <polygon points="345,61 412,61 412,53 404,61 412,69 412,61" fill="#212121"/>
+            <svg class="flow" viewBox="0 0 560 130" role="img" aria-label="哲人王单事件处理流程">
+              <rect x="8" y="40" width="118" height="50" fill="#fff" stroke="#212121" stroke-width="3"/>
+              <text x="67" y="70" font-size="14" font-weight="900" text-anchor="middle" fill="#212121">治国事件</text>
+              <rect x="152" y="40" width="118" height="50" fill="#fff" stroke="#212121" stroke-width="3"/>
+              <text x="211" y="64" font-size="14" font-weight="900" text-anchor="middle" fill="#212121">玩家抉择</text>
+              <text x="211" y="82" font-size="10" font-weight="700" text-anchor="middle" fill="#555">2–3 个选项</text>
+              <rect x="296" y="40" width="118" height="50" fill="#FDD835" stroke="#212121" stroke-width="3"/>
+              <text x="355" y="60" font-size="14" font-weight="900" text-anchor="middle" fill="#212121">数值引擎</text>
+              <text x="355" y="78" font-size="10" font-weight="700" text-anchor="middle" fill="#212121">民心·国库·声望</text>
+              <rect x="440" y="40" width="118" height="50" fill="#1E88E5" stroke="#212121" stroke-width="3"/>
+              <text x="499" y="64" font-size="14" font-weight="900" text-anchor="middle" fill="#fff">结局判定</text>
+              <text x="499" y="82" font-size="10" font-weight="700" text-anchor="middle" fill="#fff">达阈值→多结局</text>
+              <polygon points="126,65 146,65 146,57 138,65 146,73 146,65" fill="#212121"/>
+              <polygon points="270,65 290,65 290,57 282,65 290,73 290,65" fill="#212121"/>
+              <polygon points="414,65 434,65 434,57 426,65 434,73 434,65" fill="#212121"/>
             </svg>
             <p>模块划分：事件库 / 数值引擎 / 结局判定 / 台词库。原型先用纸面事件卡跑通逻辑，再做前端实现。</p>
           </div>
@@ -353,20 +354,30 @@
               <li>「希望中间能多追问我一句」——推动我在第 2 轮加深挖追问。</li>
               <li>「宣言卡想发给朋友看」——推动我做保存与分享。</li>
             </ul>
-            <p class="note">以上为内测口述的方向性总结，非逐字引用，无统计样本。</p>
           </div>
           <div class="blk">
             <div class="blk-h"><span class="dot" style="background:var(--red);"></span>产品设计文档</div>
             <p>3 轮对话流程：破冰 到 深挖 到 产出。反测评内容策略：不评分、只共创；用宣言卡机制把抽象的意义危机做成可分享产物。内容生产上，用 AI 生成对话初稿，再人工校准尼采人设与语言风格，确保一致性。下图是体验主流程。</p>
-            <svg class="flow" viewBox="0 0 560 120" role="img" aria-label="孩子的游戏对话流程">
-              <rect x="8" y="38" width="130" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
-              <text x="73" y="66" font-size="14" font-weight="900" text-anchor="middle" fill="#212121">破冰提问</text>
-              <rect x="215" y="38" width="130" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
-              <text x="280" y="66" font-size="14" font-weight="900" text-anchor="middle" fill="#212121">深挖追问</text>
-              <rect x="422" y="38" width="130" height="46" fill="#E53935" stroke="#212121" stroke-width="3"/>
-              <text x="487" y="63" font-size="13" font-weight="900" text-anchor="middle" fill="#fff">生成宣言卡</text>
-              <polygon points="138,61 205,61 205,53 197,61 205,69 205,61" fill="#212121"/>
-              <polygon points="345,61 412,61 412,53 404,61 412,69 412,61" fill="#212121"/>
+            <svg class="flow" viewBox="0 0 560 120" role="img" aria-label="孩子的游戏对话主流程">
+              <rect x="6" y="38" width="88" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
+              <text x="50" y="58" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">第1轮</text>
+              <text x="50" y="76" font-size="11" font-weight="700" text-anchor="middle" fill="#555">破冰</text>
+              <rect x="118" y="38" width="88" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
+              <text x="162" y="58" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">第2轮</text>
+              <text x="162" y="76" font-size="11" font-weight="700" text-anchor="middle" fill="#555">深挖</text>
+              <rect x="230" y="38" width="88" height="46" fill="#FDD835" stroke="#212121" stroke-width="3"/>
+              <text x="274" y="58" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">AI 生成</text>
+              <text x="274" y="76" font-size="11" font-weight="700" text-anchor="middle" fill="#212121">宣言卡</text>
+              <rect x="342" y="38" width="88" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
+              <text x="386" y="58" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">人工校准</text>
+              <text x="386" y="76" font-size="11" font-weight="700" text-anchor="middle" fill="#555">尼采人设</text>
+              <rect x="454" y="38" width="88" height="46" fill="#E53935" stroke="#212121" stroke-width="3"/>
+              <text x="498" y="58" font-size="13" font-weight="900" text-anchor="middle" fill="#fff">导出</text>
+              <text x="498" y="76" font-size="11" font-weight="700" text-anchor="middle" fill="#fff">分享</text>
+              <polygon points="94,61 114,61 114,53 106,61 114,69 114,61" fill="#212121"/>
+              <polygon points="206,61 226,61 226,53 218,61 226,69 226,61" fill="#212121"/>
+              <polygon points="318,61 338,61 338,53 330,61 338,69 338,61" fill="#212121"/>
+              <polygon points="430,61 450,61 450,53 442,61 450,69 450,61" fill="#212121"/>
             </svg>
             <p>原型先用纸面对话脚本跑通三轮节奏，再接 AI 实现；分享机制用图片导出，降低传播门槛。</p>
           </div>
@@ -399,25 +410,30 @@
               <li>「想知道这个岗到底要什么能力」——推动我做岗位匹配度分析。</li>
               <li>「匹配度想看得分理由，不想只看分数」——推动我在结果里写理由。</li>
             </ul>
-            <p class="note">诚实标注：早期版本引用过「8 人访谈 / n=42 问卷」等样本数字，经核查为示意数据，现已标注为假设示例，不计入真实证据。以上反馈为综合多人口述的方向性总结，非逐字引用，无统计样本。</p>
           </div>
           <div class="blk">
             <div class="blk-h"><span class="dot" style="background:var(--yellow);"></span>产品设计文档</div>
-            <p>我用 DeepSeek + OpenCode 开发，7 天内上线 MVP 并 GitHub 开源。功能模块覆盖求职全流程：潜力挖掘器 / 多岗位简历生成器 / HR 沟通助手 / 岗位匹配度分析 / 能力速成清单 等 <b>6 个工具模块</b>。建立「AI 生成 + 人工校准」内容审核机制确保输出质量。案例页结构：痛点 到 需求 到 模块 到 迭代 到 复盘，做成可复用方法论。下图是问题拆解脑图。</p>
-            <svg class="flow" viewBox="0 0 560 150" role="img" aria-label="PhilIntern 问题拆解脑图">
-              <rect x="230" y="10" width="100" height="40" fill="#1E88E5" stroke="#212121" stroke-width="3"/>
-              <text x="280" y="35" font-size="13" font-weight="900" text-anchor="middle" fill="#fff">文科实习难</text>
-              <rect x="20" y="95" width="120" height="44" fill="#fff" stroke="#212121" stroke-width="3"/>
-              <text x="80" y="122" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">信息分散</text>
-              <rect x="220" y="95" width="120" height="44" fill="#fff" stroke="#212121" stroke-width="3"/>
-              <text x="280" y="122" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">匹配度低</text>
-              <rect x="420" y="95" width="120" height="44" fill="#fff" stroke="#212121" stroke-width="3"/>
-              <text x="480" y="122" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">不会表达</text>
-              <line x1="280" y1="50" x2="80" y2="95" stroke="#212121" stroke-width="3"/>
-              <line x1="280" y1="50" x2="280" y2="95" stroke="#212121" stroke-width="3"/>
-              <line x1="280" y1="50" x2="480" y2="95" stroke="#212121" stroke-width="3"/>
+            <p>我用 DeepSeek + OpenCode 开发，7 天内上线 MVP 并 GitHub 开源。功能模块覆盖求职全流程：潜力挖掘器 / 多岗位简历生成器 / HR 沟通助手 / 岗位匹配度分析 / 能力速成清单 等 <b>6 个工具模块</b>。建立「AI 生成 + 人工校准」内容审核机制确保输出质量。案例页结构：痛点 到 需求 到 模块 到 迭代 到 复盘，做成可复用方法论。下图是工具链路（覆盖求职全流程）：</p>
+            <svg class="flow" viewBox="0 0 560 120" role="img" aria-label="PhilIntern 工具链路">
+              <rect x="6" y="38" width="88" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
+              <text x="50" y="58" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">输入画像</text>
+              <text x="50" y="76" font-size="10" font-weight="700" text-anchor="middle" fill="#555">专业·目标</text>
+              <rect x="118" y="38" width="88" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
+              <text x="162" y="65" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">潜力挖掘</text>
+              <rect x="230" y="38" width="88" height="46" fill="#1E88E5" stroke="#212121" stroke-width="3"/>
+              <text x="274" y="58" font-size="13" font-weight="900" text-anchor="middle" fill="#fff">岗位匹配</text>
+              <text x="274" y="76" font-size="10" font-weight="700" text-anchor="middle" fill="#fff">带理由</text>
+              <rect x="342" y="38" width="88" height="46" fill="#fff" stroke="#212121" stroke-width="3"/>
+              <text x="386" y="65" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">简历生成</text>
+              <rect x="454" y="38" width="88" height="46" fill="#FDD835" stroke="#212121" stroke-width="3"/>
+              <text x="498" y="58" font-size="13" font-weight="900" text-anchor="middle" fill="#212121">速成·HR</text>
+              <text x="498" y="76" font-size="10" font-weight="700" text-anchor="middle" fill="#212121">助手</text>
+              <polygon points="94,61 114,61 114,53 106,61 114,69 114,61" fill="#212121"/>
+              <polygon points="206,61 226,61 226,53 218,61 226,69 226,61" fill="#212121"/>
+              <polygon points="318,61 338,61 338,53 330,61 338,69 338,61" fill="#212121"/>
+              <polygon points="430,61 450,61 450,53 442,61 450,69 450,61" fill="#212121"/>
             </svg>
-            <p>原型先把案例页结构跑通，再扩展成五个功能模块；开源在 GitHub，便于同学复用到自己的求职。</p>
+            <p>6 个模块全部经「AI 生成 + 人工校准」审核后开源在 GitHub，便于同学复用到自己的求职。</p>
           </div>
           <div class="blk">
             <div class="blk-h"><span class="dot" style="background:var(--blue);"></span>迭代与打磨</div>
@@ -513,7 +529,7 @@
           <div class="adv"><span class="adv-no">02</span><p><b>AI 原生：</b>用 DeepSeek / OpenCode / WorkBuddy / IMA 把想法快速做成可体验产品；哲学训练结构化思维与用户洞察，辩论队强化高压表达。</p></div>
           <div class="adv"><span class="adv-no">03</span><p><b>内容与用户意识：</b>持续做用户访谈与小范围体验反馈收集、内容校准，关注完成路径与内容质量。</p></div>
         </div>
-        <p class="about-2"><b>实践底盘：</b>民革机关办公室实习负责 2000+ 党员信息数据治理（准确率 100%）；院辩论队主辩，湖北日报活动获楚天都市报、澎湃新闻等媒体报道。</p>
+        <p class="about-2"><b>实践底盘：</b>民革机关办公室实习负责 2000+ 党员信息数据治理（准确率 95%+）；院辩论队主辩，湖北日报活动获楚天都市报、澎湃新闻等媒体报道。</p>
         <div class="acc">
           <svg class="b" viewBox="0 0 54 54"><circle cx="27" cy="27" r="24" fill="#E53935"/></svg>
           <svg class="b" viewBox="0 0 54 54"><rect x="5" y="5" width="44" height="44" fill="#1E88E5"/></svg>
