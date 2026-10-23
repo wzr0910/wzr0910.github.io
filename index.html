@@ -21,6 +21,15 @@
 <meta name="twitter:title" content="王梓睿 · 作品集｜哲学背景的产品创作者" />
 <meta name="twitter:description" content="三个从 0 到 1 的 AI 数字产品：PhilIntern 文科生AI求职助手、孩子的游戏 AI 共读、哲人王文字策略游戏。" />
 <meta name="twitter:image" content="https://wzr0910.github.io/og-cover.png" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Person","name":"王梓睿","url":"https://wzr0910.github.io/","jobTitle":"产品创作者（求职意向：AI 产品运营 / 内容运营）","email":"mailto:3304236052@qq.com","telephone":"+86-134-8709-5581","image":"https://wzr0910.github.io/og-cover.png","sameAs":["https://github.com/wzr0910"],"alumniOf":{"@type":"CollegeOrUniversity","name":"湖北大学"},"knowsAbout":["AI 产品设计","内容运营","用户研究","游戏叙事","端到端交付"],"description":"哲学背景的产品创作者，独立设计与开发三个从 0 到 1 的数字产品：PhilIntern 文科生AI求职助手、孩子的游戏 AI 共读、哲人王文字策略游戏。"},
+{"@type":"VideoGame","name":"哲人王","url":"https://wzr0910.github.io/philosopher-king","description":"博物馆穿越题材的文字策略游戏：以哲人王身份处理治国抉择，四维数值走向 22 种结局、解锁 7 项成就。","author":{"@type":"Person","name":"王梓睿"},"applicationCategory":"Game","operatingSystem":"Web"},
+{"@type":"WebApplication","name":"孩子的游戏","url":"https://wzr0910.github.io/child-game","description":"AI 哲学共读平台：用 3 轮引导式 AI 对话共创一张人生宣言卡，支持保存为图片分享。","author":{"@type":"Person","name":"王梓睿"},"operatingSystem":"Web"},
+{"@type":"WebApplication","name":"PhilIntern","url":"https://wzr0910.github.io/hub","description":"文科生 AI 求职助手：岗位匹配度分析、多岗位简历生成器、HR 沟通助手等 6 个工具模块，已 GitHub 开源。","author":{"@type":"Person","name":"王梓睿"},"operatingSystem":"Web"}
+]}
+</script>
+<script>document.documentElement.classList.add('js');</script>
 <style>
   :root{
     --red:#E53935; --yellow:#FDD835; --blue:#1E88E5;
@@ -45,6 +54,8 @@
   /* ===== NAV ===== */
   .nav{position:sticky;top:0;z-index:30;background:var(--paper);border-bottom:3px solid var(--ink);}
   .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px;}
+  .nav-top{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .nav-toggle{display:none;}
   .brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:19px;letter-spacing:.5px;}
   .mark{width:34px;height:34px;position:relative;flex:none;}
   .mark .sq{position:absolute;inset:0;background:var(--blue);}
@@ -184,6 +195,13 @@
     .grid,.grid-caps,.adv-grid{grid-template-columns:1fr;}
     .crows{grid-template-columns:1fr;}
     .nav-in{flex-direction:column;height:auto;align-items:stretch;gap:4px;padding:10px 0;}
+    .nav-top{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+    .js .nav-toggle{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:44px;height:44px;padding:0;background:var(--paper);border:2px solid var(--ink);cursor:pointer;flex:none;}
+    .nav-toggle .bar{display:block;width:20px;height:3px;background:var(--ink);}
+    .js .links{display:none;width:100%;border-top:3px solid var(--ink);padding-top:0;gap:0;}
+    .js .links.open{display:flex;flex-direction:column;}
+    .js .links a{border-left:none;border-top:2px solid var(--ink);flex:none;white-space:nowrap;padding:14px 10px;font-size:15px;text-align:center;width:100%;}
+    .js .links a:first-child{border-top:none;}
     .links{display:flex;flex-wrap:nowrap;overflow-x:auto;width:100%;border-top:3px solid var(--ink);padding-top:8px;}
     .links a{border-left:2px solid var(--ink);flex:none;white-space:nowrap;}
     .vtext{display:none;}
@@ -194,8 +212,11 @@
 
   <header class="nav">
     <div class="wrap nav-in">
-      <div class="brand"><span class="mark"><span class="sq"></span><span class="ci"></span></span><span class="brand-name">王梓睿</span></div>
-      <nav class="links">
+      <div class="nav-top">
+        <div class="brand"><span class="mark"><span class="sq"></span><span class="ci"></span></span><span class="brand-name">王梓睿</span></div>
+        <button class="nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="nav-links"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+      </div>
+      <nav class="links" id="nav-links">
         <a href="#works">作品</a>
         <a href="#deep">深读</a>
         <a href="#caps">能力</a>
@@ -609,6 +630,28 @@
       <span class="blk"><span class="d" style="background:var(--blue)"></span>独立把想法做成能用的东西</span>
     </div>
   </footer>
+
+  <script>
+  (function(){
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.querySelector('.links');
+    if (!toggle || !links) return;
+    function setOpen(open){
+      links.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? '关闭菜单' : '打开菜单');
+    }
+    toggle.addEventListener('click', function(){
+      setOpen(!links.classList.contains('open'));
+    });
+    links.addEventListener('click', function(e){
+      if (e.target.closest('a')) setOpen(false);
+    });
+    document.addEventListener('click', function(e){
+      if (!e.target.closest('.nav-in')) setOpen(false);
+    });
+  })();
+  </script>
 
 </body>
 </html>
