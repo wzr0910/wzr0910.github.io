@@ -714,7 +714,7 @@
       bar.id = 'progress';
       document.body.appendChild(bar);
 
-      var revealSel = '.hero-text, .sec > .wrap > .sec-head, .works .grid > .card, .caps .grid-caps > .cap, .deep .deep-nav, .deep .note, .deep .case, .deep .case .blk, .about > p, .about > .about-2, .about > .adv-grid, .about > .acc, .crows .crow';
+      var revealSel = '.hero-text, .sec > .wrap > .sec-head, #works .grid > .card, #caps .grid-caps > .cap, .deep .deep-nav, .deep .note, .deep .case, .deep .case .blk, .about > p, .about > .about-2, .about > .adv-grid, .about > .acc, .crows .crow';
       var targets = document.querySelectorAll(revealSel);
       Array.prototype.forEach.call(targets, function(el){
         el.classList.add('reveal');
@@ -751,7 +751,7 @@
 
     /* ---- 3D 跟手 ---- */
     if (!reduced) {
-      Array.prototype.forEach.call(document.querySelectorAll('.works .grid .card, .caps .grid-caps .cap'), function(el){
+      Array.prototype.forEach.call(document.querySelectorAll('#works .grid .card, #caps .grid-caps .cap'), function(el){
         el.addEventListener('mousemove', function(e){
           var r = el.getBoundingClientRect();
           var x = (e.clientX - r.left) / r.width - .5;
@@ -825,7 +825,7 @@
         { type: 'typing', ttl: 'AI 哲学共读 · 3 轮对话', text: '重要的不是答案，而是提问。' },
         { type: 'bars', ttl: '四维数值实时变化', items: [['民心', 82], ['财富', 64], ['稳定', 71], ['自由', 58]] }
       ];
-      Array.prototype.forEach.call(document.querySelectorAll('.works .grid .card'), function(card, i){
+      Array.prototype.forEach.call(document.querySelectorAll('#works .grid .card'), function(card, i){
         var cfg = demos[i];
         if (!cfg) return;
         var demo = document.createElement('div');
