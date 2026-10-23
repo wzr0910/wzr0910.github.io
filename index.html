@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#FAFAFA" />
 <title>王梓睿 · 作品集</title>
 <meta name="description" content="哲学背景的产品创作者，独立设计与开发三个从 0 到 1 的数字产品：PhilIntern 文科生AI求职助手、孩子的游戏 AI 共读、哲人王文字策略游戏。收录每个项目的背景、设计过程与复盘。" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><rect width='48' height='48' fill='%23FAFAFA'/><rect x='8' y='8' width='22' height='22' fill='%231E88E5'/><circle cx='34' cy='34' r='10' fill='%23E53935'/></svg>" />
@@ -49,6 +50,7 @@
   }
   .jost{font-family:"Jost","Noto Sans SC",sans-serif;}
   a{color:inherit;text-decoration:none;}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:2px;}
   .wrap{max-width:1080px;margin:0 auto;padding:0 28px;}
 
   /* ===== NAV ===== */
@@ -108,7 +110,8 @@
   .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;}
   .chips span{font-size:11.5px;font-weight:700;border:2px solid var(--ink);padding:2px 8px;}
   .go{font-weight:900;font-size:14px;display:inline-flex;align-items:center;gap:8px;align-self:flex-start;}
-  .go .ar{width:0;height:0;border-top:8px solid transparent;border-bottom:8px solid transparent;border-left:12px solid var(--ink);}
+  .go .ar{width:0;height:0;border-top:8px solid transparent;border-bottom:8px solid transparent;border-left:12px solid var(--ink);transition:transform .18s ease;}
+  .card:hover .go .ar{transform:translateX(4px);}
 
   /* ===== CAPS ===== */
   .grid-caps{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
@@ -135,7 +138,8 @@
 
   /* ===== CONTACT ===== */
   .crows{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
-  .crow{display:flex;align-items:center;justify-content:space-between;border:3px solid var(--ink);padding:18px 22px;box-shadow:6px 6px 0 var(--ink);}
+  .crow{display:flex;align-items:center;justify-content:space-between;border:3px solid var(--ink);padding:18px 22px;box-shadow:6px 6px 0 var(--ink);transition:transform .15s ease,box-shadow .15s ease;}
+  a.crow:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--ink);}
   .crow .k{font-weight:900;font-size:14px;}
   .crow .v{font-weight:700;font-size:15px;text-align:right;}
   .crow:nth-child(1){background:var(--red);color:#fff;}
@@ -166,7 +170,7 @@
   .deep .case-h .t{font-size:21px;font-weight:900;line-height:1.15;margin:0;}
   .deep .case-h .s{font-size:12.5px;font-weight:700;color:#555;margin-top:2px;}
   .deep .case-b{padding:24px;}
-  .deep .blk{margin-bottom:22px;}
+  .deep .blk{margin-bottom:22px;max-width:760px;}
   .deep .blk:last-child{margin-bottom:0;}
   .deep .blk-h{display:flex;align-items:center;gap:9px;font-weight:900;font-size:15px;margin-bottom:9px;}
   .deep .blk-h .dot{width:14px;height:14px;flex:none;border:3px solid var(--ink);}
@@ -177,6 +181,13 @@
   .deep .note{font-size:12.5px;font-weight:700;color:var(--blue);border-left:4px solid var(--blue);padding:4px 0 4px 10px;margin:10px 0 0;line-height:1.5;}
   .deep .honest{background:var(--yellow);border:3px solid var(--ink);padding:16px 20px;box-shadow:8px 8px 0 var(--ink);font-size:13.5px;line-height:1.7;margin-bottom:30px;}
   .deep .honest b{font-weight:900;}
+  /* 深读区项目快速跳转 */
+  .deep-nav{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 24px;}
+  .deep-nav a{font-weight:900;font-size:13px;border:2px solid var(--ink);border-top-width:6px;padding:8px 16px;background:#fff;box-shadow:4px 4px 0 var(--ink);transition:transform .15s ease,box-shadow .15s ease;}
+  .deep-nav a:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink);}
+  .deep-nav a:nth-child(1){border-top-color:var(--blue);}
+  .deep-nav a:nth-child(2){border-top-color:var(--yellow);}
+  .deep-nav a:nth-child(3){border-top-color:var(--red);}
   /* 深读项链接条（速览卡精简为：一句定位 + 入口） */
   .deep .deep-link{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;border-bottom:3px solid var(--ink);background:var(--paper);padding:14px 24px;}
   .deep .deep-link .dl-pos{font-size:13.5px;font-weight:800;color:#333;flex:1;min-width:200px;line-height:1.55;}
@@ -205,6 +216,10 @@
     .links{display:flex;flex-wrap:nowrap;overflow-x:auto;width:100%;border-top:3px solid var(--ink);padding-top:8px;}
     .links a{border-left:2px solid var(--ink);flex:none;white-space:nowrap;}
     .vtext{display:none;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    .card,.cap,.cta,.crow,.go .ar{transition:none !important;}
   }
 </style>
 </head>
@@ -352,7 +367,13 @@
 
       <div class="note" style="margin-bottom:28px;">验证范围说明：三个项目均为个人作品、早期验证阶段，真实使用以自身与数位内测用户为主；以下用户反馈为方向性校准，非统计结论。</div>
 
-      <div class="case">
+      <div class="deep-nav">
+        <a href="#case-phil">PhilIntern</a>
+        <a href="#case-child">孩子的游戏</a>
+        <a href="#case-king">哲人王</a>
+      </div>
+
+      <div class="case" id="case-phil">
         <div class="case-h">
           <span class="no" style="background:var(--blue);">01</span>
           <div><h3 class="t">PhilIntern · 文科生AI求职助手</h3><div class="s">研究证据项 · 产品设计 与 开源</div></div>
@@ -410,7 +431,7 @@
         </div>
       </div>
 
-      <div class="case">
+      <div class="case" id="case-child">
         <div class="case-h">
           <span class="no" style="background:var(--yellow);">02</span>
           <div><h3 class="t">孩子的游戏 · AI 哲学共读平台</h3><div class="s">AI 主线项 · 产品设计 与 前端</div></div>
@@ -468,7 +489,7 @@
         </div>
       </div>
 
-      <div class="case">
+      <div class="case" id="case-king">
         <div class="case-h">
           <span class="no" style="background:var(--red);">03</span>
           <div><h3 class="t">哲人王 · 网页文字治国游戏</h3><div class="s">旗舰项 · 产品设计 与 独立开发</div></div>
@@ -492,7 +513,7 @@
           </div>
           <div class="blk">
             <div class="blk-h"><span class="dot" style="background:var(--blue);"></span>产品设计</div>
-            <p>核心系统：选项 → 数值变化 → 结局判定。我独立设计 <b>20 个治国事件、6 位哲人顾问、22 种结局、7 项成就</b>，以民心 / 财富 / 稳定 / 自由四维数值驱动 12 轮决策，搭建「选项-数值-结局」叙事系统与数值平衡模型，10 天内从设计到上线。原型先用纸面事件卡跑通逻辑，再做前端实现。单事件处理流程：</p>
+            <p>核心系统：选项 → 数值变化 → 结局判定。我独立设计 <b>20 个治国事件、6 位哲人顾问、21 种结局、7 项成就</b>，以民心 / 财富 / 稳定 / 自由四维数值驱动 12 轮决策，搭建「选项-数值-结局」叙事系统与数值平衡模型，10 天内从设计到上线。原型先用纸面事件卡跑通逻辑，再做前端实现。单事件处理流程：</p>
             <svg class="flow" viewBox="0 0 560 130" role="img" aria-label="哲人王单事件处理流程">
               <rect x="8" y="40" width="118" height="50" fill="#fff" stroke="#212121" stroke-width="3"/>
               <text x="67" y="70" font-size="14" font-weight="900" text-anchor="middle" fill="#212121">治国事件</text>
@@ -616,9 +637,9 @@
         <svg class="sec-shape" viewBox="0 0 46 46"><rect x="4" y="4" width="38" height="38" fill="#1E88E5"/><circle cx="23" cy="23" r="11" fill="#FDD835"/></svg>
       </div>
       <div class="crows">
-        <div class="crow"><span class="k">邮箱</span><span class="v">3304236052@qq.com</span></div>
-        <div class="crow"><span class="k">手机</span><span class="v">13487095581</span></div>
-        <div class="crow"><span class="k">GitHub</span><span class="v">github.com/wzr0910</span></div>
+        <a class="crow" href="mailto:3304236052@qq.com"><span class="k">邮箱</span><span class="v">3304236052@qq.com</span></a>
+        <a class="crow" href="tel:+8613487095581"><span class="k">手机</span><span class="v">13487095581</span></a>
+        <a class="crow" href="https://github.com/wzr0910" target="_blank" rel="noopener"><span class="k">GitHub</span><span class="v">github.com/wzr0910</span></a>
         <div class="crow"><span class="k">在线简历</span><span class="v"><a href="resume.html" target="_blank" rel="noopener">点击查看 ↗</a></span></div>
       </div>
     </div>
