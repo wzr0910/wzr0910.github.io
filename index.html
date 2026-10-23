@@ -777,7 +777,7 @@
           for (var k in map){
             var el = art.querySelector('.' + k);
             if (!el) continue;
-            if (!el.dataset.base) el.dataset.base = el.getAttribute('transform') || '';
+            if (el.dataset.base === undefined) el.dataset.base = el.getAttribute('transform') || '';
             var tx = 'translate(' + (cx * map[k]).toFixed(1) + ' ' + (cy * map[k]).toFixed(1) + ')';
             el.setAttribute('transform', tx + (el.dataset.base ? ' ' + el.dataset.base : ''));
           }
