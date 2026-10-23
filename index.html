@@ -6,9 +6,21 @@
 <title>王梓睿 · 作品集</title>
 <meta name="description" content="哲学背景的产品创作者，独立设计与开发三个从 0 到 1 的数字产品：PhilIntern 文科生AI求职助手、孩子的游戏 AI 共读、哲人王文字策略游戏。收录每个项目的背景、设计过程与复盘。" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><rect width='48' height='48' fill='%23FAFAFA'/><rect x='8' y='8' width='22' height='22' fill='%231E88E5'/><circle cx='34' cy='34' r='10' fill='%23E53935'/></svg>" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts.css" />
+<link rel="canonical" href="https://wzr0910.github.io/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="王梓睿 · 作品集" />
+<meta property="og:title" content="王梓睿 · 作品集｜哲学背景的产品创作者" />
+<meta property="og:description" content="哲学背景的产品创作者，独立设计与开发三个从 0 到 1 的数字产品：PhilIntern 文科生AI求职助手、孩子的游戏 AI 共读、哲人王文字策略游戏。收录每个项目的背景、设计过程与复盘。" />
+<meta property="og:url" content="https://wzr0910.github.io/" />
+<meta property="og:image" content="https://wzr0910.github.io/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="zh_CN" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="王梓睿 · 作品集｜哲学背景的产品创作者" />
+<meta name="twitter:description" content="三个从 0 到 1 的 AI 数字产品：PhilIntern 文科生AI求职助手、孩子的游戏 AI 共读、哲人王文字策略游戏。" />
+<meta name="twitter:image" content="https://wzr0910.github.io/og-cover.png" />
 <style>
   :root{
     --red:#E53935; --yellow:#FDD835; --blue:#1E88E5;
@@ -67,7 +79,7 @@
   .sec{padding:60px 0;border-top:3px solid var(--ink);position:relative;}
   .sec-head{display:flex;align-items:flex-end;gap:18px;margin-bottom:38px;}
   .sec-no{font-family:"Jost",sans-serif;font-weight:900;font-size:clamp(40px,6vw,64px);line-height:.8;color:var(--gray);}
-  .sec-tt{font-size:clamp(24px,3.4vw,34px);font-weight:900;}
+  .sec-tt{font-size:clamp(24px,3.4vw,34px);font-weight:900;margin:0;}
   .sec-tt .en{display:block;font-family:"Jost",sans-serif;font-weight:700;font-size:13px;letter-spacing:4px;color:var(--gray);text-transform:uppercase;margin-top:4px;}
   .sec-shape{margin-left:auto;width:46px;height:46px;flex:none;}
 
@@ -79,7 +91,7 @@
   .card-top{height:128px;position:relative;overflow:hidden;border-bottom:3px solid var(--ink);}
   .card-top .num{position:absolute;top:8px;left:12px;font-family:"Jost",sans-serif;font-weight:900;font-size:40px;color:#fff;mix-blend-mode:difference;}
   .card-body{padding:20px 20px 24px;display:flex;flex-direction:column;flex:1;}
-  .card .ttl{font-size:24px;font-weight:900;line-height:1.1;}
+  .card .ttl{font-size:24px;font-weight:900;line-height:1.1;margin:0;}
   .card .sub{font-size:13px;font-weight:700;color:#555;margin:3px 0 12px;}
   .card .desc{font-size:13.5px;color:#333;flex:1;margin-bottom:14px;}
   .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;}
@@ -140,7 +152,7 @@
   .deep .case{border:3px solid var(--ink);background:#fff;box-shadow:10px 10px 0 var(--ink);margin-bottom:30px;overflow:hidden;}
   .deep .case-h{display:flex;align-items:center;gap:16px;padding:20px 24px;border-bottom:3px solid var(--ink);}
   .deep .case-h .no{font-family:"Jost",sans-serif;font-weight:900;font-size:30px;color:#fff;width:54px;height:54px;display:flex;align-items:center;justify-content:center;flex:none;border:3px solid var(--ink);}
-  .deep .case-h .t{font-size:21px;font-weight:900;line-height:1.15;}
+  .deep .case-h .t{font-size:21px;font-weight:900;line-height:1.15;margin:0;}
   .deep .case-h .s{font-size:12.5px;font-weight:700;color:#555;margin-top:2px;}
   .deep .case-b{padding:24px;}
   .deep .blk{margin-bottom:22px;}
@@ -233,7 +245,7 @@
     <div class="wrap">
       <div class="sec-head">
         <span class="sec-no jost">01</span>
-        <span class="sec-tt">作品<span class="en">Works</span></span>
+        <h2 class="sec-tt">作品<span class="en">Works</span></h2>
         <svg class="sec-shape" viewBox="0 0 46 46"><circle cx="23" cy="23" r="20" fill="#E53935"/><rect x="14" y="14" width="18" height="18" fill="#FAFAFA"/></svg>
       </div>
       <div class="grid">
@@ -252,7 +264,7 @@
             </svg>
           </div>
           <div class="card-body">
-            <div class="ttl">PhilIntern</div>
+            <h3 class="ttl">PhilIntern</h3>
             <div class="sub">文科生AI求职助手</div>
             <p class="desc">面向哲学与文科生的职业辅助工具。主导从用户研究、需求拆解、模块设计到迭代复盘的完整流程。</p>
             <p class="result">已在 GitHub 开源，根据同学试用反馈持续迭代</p>
@@ -274,7 +286,7 @@
             </svg>
           </div>
           <div class="card-body">
-            <div class="ttl">孩子的游戏</div>
+            <h3 class="ttl">孩子的游戏</h3>
             <div class="sub">AI 哲学共读平台</div>
             <p class="desc">为 22–28 岁青年设计的 AI 共读产品，用 3 轮对话引导用户共创一张人生宣言卡，并支持保存为图片分享。</p>
             <p class="result">已部署上线，手机 / 电脑均可即点即玩</p>
@@ -296,7 +308,7 @@
             </svg>
           </div>
           <div class="card-body">
-            <div class="ttl">哲人王</div>
+            <h3 class="ttl">哲人王</h3>
             <div class="sub">网页文字治国游戏</div>
             <p class="desc">博物馆穿越题材的文字策略游戏：以哲人王身份处理治国抉择，四维数值走向 22 种结局、解锁 7 项成就。AI 生成 50+ 张统一画风插画。</p>
             <p class="result">已上线，手机 / 电脑即点即玩</p>
@@ -313,7 +325,7 @@
     <div class="wrap">
       <div class="sec-head">
         <span class="sec-no jost">02</span>
-        <span class="sec-tt">项目深读<span class="en">How I think</span></span>
+        <h2 class="sec-tt">项目深读<span class="en">How I think</span></h2>
         <svg class="sec-shape" viewBox="0 0 46 46"><rect x="6" y="6" width="34" height="34" fill="#1E88E5"/><circle cx="23" cy="23" r="9" fill="#FDD835"/></svg>
       </div>
 
@@ -322,7 +334,7 @@
       <div class="case">
         <div class="case-h">
           <span class="no" style="background:var(--blue);">01</span>
-          <div><div class="t">PhilIntern · 文科生AI求职助手</div><div class="s">研究证据项 · 产品设计 与 开源</div></div>
+          <div><h3 class="t">PhilIntern · 文科生AI求职助手</h3><div class="s">研究证据项 · 产品设计 与 开源</div></div>
         </div>
         <div class="deep-link">
           <span class="dl-pos">把文科生求职的信息差，做成「痛点 → 方案」讲清的 AI 工具集，覆盖求职全流程。</span>
@@ -380,7 +392,7 @@
       <div class="case">
         <div class="case-h">
           <span class="no" style="background:var(--yellow);">02</span>
-          <div><div class="t">孩子的游戏 · AI 哲学共读平台</div><div class="s">AI 主线项 · 产品设计 与 前端</div></div>
+          <div><h3 class="t">孩子的游戏 · AI 哲学共读平台</h3><div class="s">AI 主线项 · 产品设计 与 前端</div></div>
         </div>
         <div class="deep-link">
           <span class="dl-pos">用 3 轮 AI 对话把意义探索做成可共创、可分享的「人生宣言卡」，替代同质化心理测评。</span>
@@ -438,7 +450,7 @@
       <div class="case">
         <div class="case-h">
           <span class="no" style="background:var(--red);">03</span>
-          <div><div class="t">哲人王 · 网页文字治国游戏</div><div class="s">旗舰项 · 产品设计 与 独立开发</div></div>
+          <div><h3 class="t">哲人王 · 网页文字治国游戏</h3><div class="s">旗舰项 · 产品设计 与 独立开发</div></div>
         </div>
         <div class="deep-link">
           <span class="dl-pos">将哲学治理命题做成多结局、数值驱动的文字决策游戏，让玩家在体验中理解不同治理取向的代价。</span>
@@ -495,7 +507,7 @@
     <div class="wrap">
       <div class="sec-head">
         <span class="sec-no jost">03</span>
-        <span class="sec-tt">能力<span class="en">What I bring</span></span>
+        <h2 class="sec-tt">能力<span class="en">What I bring</span></h2>
         <svg class="sec-shape" viewBox="0 0 46 46"><polygon points="23,4 42,42 4,42" fill="#FDD835"/><circle cx="23" cy="30" r="7" fill="#212121"/></svg>
       </div>
       <div class="grid-caps">
@@ -555,7 +567,7 @@
     <div class="wrap about-in">
       <div class="sec-head">
         <span class="sec-no jost">04</span>
-        <span class="sec-tt">关于我<span class="en">About</span></span>
+        <h2 class="sec-tt">关于我<span class="en">About</span></h2>
       </div>
       <div class="about-in about">
         <p>我是王梓睿。比起停留在"想清楚"，我更在意<span class="hl">把想清楚的东西做出来</span>——这三个产品都从一个具体的人的困境出发，自己设计、自己写、自己上线。哲学训练给我拆解问题与讲清逻辑的底子，快速把想法做成可体验的原型让我能更快验证。我相信好产品来自对一类人的真实理解，而不是套模板。</p>
@@ -579,7 +591,7 @@
     <div class="wrap">
       <div class="sec-head">
         <span class="sec-no jost">05</span>
-        <span class="sec-tt">联系<span class="en">Contact</span></span>
+        <h2 class="sec-tt">联系<span class="en">Contact</span></h2>
         <svg class="sec-shape" viewBox="0 0 46 46"><rect x="4" y="4" width="38" height="38" fill="#1E88E5"/><circle cx="23" cy="23" r="11" fill="#FDD835"/></svg>
       </div>
       <div class="crows">
